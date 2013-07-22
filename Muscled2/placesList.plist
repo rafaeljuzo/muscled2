@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>titleKey</key>
+		<string>Muscled2 - Americana</string>
+		<key>subtitleKey</key>
+		<string>Av. São Jerônimo, 2175 - Parque das Nações - Americana</string>
+		<key>latitudeKey</key>
+		<string>-22.722337</string>
+		<key>longitudeKey</key>
+		<string>-47.344111</string>
+		<key>telefoneKey</key>
+		<string>Tel: 55 19 9201 7942</string>
+		<key>numeroParaLigarKey</key>
+		<string>019-9201-7942</string>
+		<key>enderecoKey</key>
+		<string>Av. São Jerônimo, 2175 - Parque das Nações</string>
+		<key>fotoPathKey</key>
+		<string>fotoLoja1@2x.png</string>
+	</dict>
+</array>
+</plist>

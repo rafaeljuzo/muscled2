@@ -7,10 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "ProdutosViewController.h"
+#import "VideosViewController.h"
+#import "MaisViewController.h"
+#import "DietaViewController.h"
 
-#import "FirstViewController.h"
-
-#import "SecondViewController.h"
 
 @implementation AppDelegate
 
@@ -28,10 +30,19 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
-    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+    
+    UIViewController *homeViewController = [[[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil] autorelease];    
+    UIViewController *produtosViewController = [[[ProdutosViewController alloc] initWithNibName:@"ProdutosViewController" bundle:nil] autorelease];
+    UIViewController *videosViewController = [[[VideosViewController alloc] initWithNibName:@"VideosViewController" bundle:nil] autorelease];
+    UIViewController *maisViewController = [[[MaisViewController alloc] initWithNibName:@"MaisViewController" bundle:nil] autorelease];
+    UIViewController *dietaViewController = [[[DietaViewController alloc] initWithNibName:@"DietaViewController" bundle:nil] autorelease];
+    
+    UINavigationController *navProdutosController = [[UINavigationController alloc] initWithRootViewController:produtosViewController];
+    UINavigationController *navMaisController = [[UINavigationController alloc] initWithRootViewController:maisViewController];
+    
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:homeViewController, navProdutosController, dietaViewController, videosViewController, navMaisController, nil];
+    
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
