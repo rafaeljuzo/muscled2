@@ -17,9 +17,9 @@ UISearchBarDelegate, UISearchDisplayDelegate, UIGestureRecognizerDelegate>{
     NSString *savedSearchTerms;
 }
 
-@property (nonatomic,retain) IBOutlet UITableView *produtosTableView;
-@property (nonatomic,retain) NSMutableArray *listaProdutos;
-@property (nonatomic,retain) NSMutableArray *resultadosBusca;
+@property (nonatomic,strong) IBOutlet UITableView *produtosTableView;
+@property (nonatomic,strong) NSMutableArray *listaProdutos;
+@property (nonatomic,strong) NSMutableArray *resultadosBusca;
 @property (nonatomic, copy) NSString *savedSearchTerms;
 
 - (void) handleSearchForTerm: (NSString *) searchTerm;

@@ -79,10 +79,5 @@
 }
 
 
-- (void) dealloc{
-    [webView release];
-    [activityIndic release];
-    [super dealloc];
-}
 
 @end

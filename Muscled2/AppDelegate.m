@@ -19,28 +19,22 @@
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
 
-- (void)dealloc
-{
-    [_window release];
-    [_tabBarController release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    UIViewController *homeViewController = [[[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil] autorelease];    
-    UIViewController *produtosViewController = [[[ProdutosViewController alloc] initWithNibName:@"ProdutosViewController" bundle:nil] autorelease];
-    UIViewController *videosViewController = [[[VideosViewController alloc] initWithNibName:@"VideosViewController" bundle:nil] autorelease];
-    UIViewController *maisViewController = [[[MaisViewController alloc] initWithNibName:@"MaisViewController" bundle:nil] autorelease];
-    UIViewController *dietaViewController = [[[DietaViewController alloc] initWithNibName:@"DietaViewController" bundle:nil] autorelease];
+    UIViewController *homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];    
+    UIViewController *produtosViewController = [[ProdutosViewController alloc] initWithNibName:@"ProdutosViewController" bundle:nil];
+    UIViewController *videosViewController = [[VideosViewController alloc] initWithNibName:@"VideosViewController" bundle:nil];
+    UIViewController *maisViewController = [[MaisViewController alloc] initWithNibName:@"MaisViewController" bundle:nil];
+    UIViewController *dietaViewController = [[DietaViewController alloc] initWithNibName:@"DietaViewController" bundle:nil];
     
     UINavigationController *navProdutosController = [[UINavigationController alloc] initWithRootViewController:produtosViewController];
     UINavigationController *navMaisController = [[UINavigationController alloc] initWithRootViewController:maisViewController];
     
-    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+    self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:homeViewController, navProdutosController, dietaViewController, videosViewController, navMaisController, nil];
     
     self.window.rootViewController = self.tabBarController;

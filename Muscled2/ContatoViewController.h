@@ -18,9 +18,9 @@
     IBOutlet UIButton *botaoEnviar;
 }
 
-@property (nonatomic, retain) IBOutlet UITextField *nomeTextField;
-@property (retain, nonatomic) IBOutlet UITextView *msgView;
-@property (retain, nonatomic) IBOutlet UIButton *botaoEnviar;
+@property (nonatomic, strong) IBOutlet UITextField *nomeTextField;
+@property (strong, nonatomic) IBOutlet UITextView *msgView;
+@property (strong, nonatomic) IBOutlet UIButton *botaoEnviar;
 
 -(IBAction)sendMail:(id)sender;
 -(IBAction)limparFields:(id)sender;

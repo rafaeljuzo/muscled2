@@ -69,31 +69,18 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [coordenadaAtual release];
-    [textoEndereco release];
-    [textoTelefone release];
-    [fotoDaLoja release];
-    [self.fotoDaLojaImageView release];
-    [self.labelTelefone release];
-    [self.labelEndereco release];
-    [super dealloc];
-}
-
 #pragma mark - IBAction
 
 - (IBAction)tracarRota {
     NSString* addr = [NSString stringWithFormat:@"http://maps.google.com/maps?saddr=%@&daddr=%@", coordenadaAtual, textoEndereco];
     NSURL* url = [[NSURL alloc] initWithString:[addr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     [[UIApplication sharedApplication] openURL:url];
-    [url release];
 }
 
 - (IBAction)mostrarNoMaps {
     NSString* addr = [NSString stringWithFormat:@"http://maps.google.com/maps?q=%@",textoEndereco];
     NSURL* url = [[NSURL alloc] initWithString:[addr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     [[UIApplication sharedApplication] openURL:url];
-    [url release];
 }
 
 - (IBAction)ligarParaLoja {

@@ -26,11 +26,4 @@
 	return self;
 }
 
-- (void)dealloc 
-{	
-    [_distanceFromUser release];
-    [_title release];
-	[_subtitle release];
-	[super dealloc];
-}
 @end

@@ -50,7 +50,6 @@
     [controller setToRecipients:[NSArray arrayWithObject:@"contato@muscled2.com.br"]];
     [controller setMessageBody:msgView.text isHTML:NO];
     [self presentModalViewController:controller animated:YES];
-    [controller release];
 
 }
 
@@ -85,11 +84,9 @@
     if (result == MFMailComposeResultSent) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Mensagem" message:@"Obrigado pelo contato. \n Assim que possível retornaremos." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
-        [alert release];
     } if (result == MFMailComposeResultFailed) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Mensagem" message:@"Ocorreu um erro ao enviar o e-mail." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
-        [alert release];
     }
 }
 
@@ -127,11 +124,5 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void) dealloc{
-    [nomeTextField release];
-    [msgView release];
-    [botaoEnviar release];
-    [super dealloc];
-}
 
 @end

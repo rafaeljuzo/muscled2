@@ -11,7 +11,7 @@
 
 @interface VideosViewController : UIViewController<UIWebViewDelegate>{
 }
-@property (retain, nonatomic) IBOutlet UIWebView *webView;
-@property (retain, nonatomic) IBOutlet UIActivityIndicatorView *activityIndic;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndic;
 
 @end

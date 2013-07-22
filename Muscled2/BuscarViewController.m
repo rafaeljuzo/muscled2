@@ -11,8 +11,8 @@
 #import "PlaceProfileVC.h"
 
 @interface BuscarViewController ()
-@property (nonatomic, retain) CLLocation *userLocation;
-@property (nonatomic, retain) NSMutableArray * lojas;
+@property (nonatomic, strong) CLLocation *userLocation;
+@property (nonatomic, strong) NSMutableArray * lojas;
 @end
 
 @implementation BuscarViewController

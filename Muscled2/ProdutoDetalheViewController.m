@@ -30,7 +30,6 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
     ProdutoFotoViewController *fotoProdutoVC = [[ProdutoFotoViewController alloc] init];
     fotoProdutoVC.nomeProduto = self.nomeDoProduto;
     [self.navigationController pushViewController:fotoProdutoVC animated:YES];
-    [fotoProdutoVC release];
 }
 
 - (void)configureView{
@@ -59,7 +58,6 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
     
     UIButton *localFlipIndicator =[[UIButton alloc] initWithFrame:CGRectMake(0,0,30,30)];
 	self.flipIndicatorButton=localFlipIndicator;
-	[localFlipIndicator release];
 
 	[self.flipIndicatorButton setBackgroundImage:[UIImage imageNamed:@"tblIcon.png"] forState:UIControlStateNormal];
     
@@ -68,7 +66,6 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
 	
     [self.navigationItem setRightBarButtonItem:flipButtonBarItem animated:YES];
     
-	[flipButtonBarItem release];
     
 	[self.flipIndicatorButton addTarget:self action:@selector(flipViewAtual) forControlEvents:(UIControlEventTouchUpInside)];
     
@@ -86,8 +83,6 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
     
     self.tblCompImageView.gestureRecognizers = [NSArray arrayWithObjects:doubleTap, twoFingerTap, nil];
     
-    [doubleTap release];
-    [twoFingerTap release];
     
     if (self.imgComparativo != NULL) {   
         CGRect buttonFrame = self.comparativoButton.frame;
@@ -176,8 +171,7 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
 - (void)setDetailItem:(id)newDetailItem
 {
     if (_detailItem != newDetailItem) {
-        [_detailItem release]; 
-        _detailItem = [newDetailItem retain]; 
+        _detailItem = newDetailItem; 
         
         [self configureView];
     }
@@ -249,21 +243,5 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
     [super viewWillAppear:animated];
 }
 
-- (void)dealloc{
-    [imgTabelaNutricional release];
-    [_flipIndicatorButton release];
-    [textoDaDescricao release];
-    [imgFotoDoProduto release];
-    [_detailItem release];
-    [_imagemDoProdutoImageView release];
-    [_tblCompImageView release];
-    [_tblCompView release];
-    [_viewPrincipal release];
-    [_descricaoTextView release];
-    [_tblCompScrollView release];
-    [_fotoTextoScrollView release];
-    [_comparativoButton release];
-    [super dealloc];
-}
 
 @end

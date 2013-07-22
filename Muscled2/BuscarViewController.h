@@ -27,12 +27,12 @@
     NSMutableArray *placesList;
 }
 
-@property (retain, nonatomic) IBOutlet UITableView *placesTableView;
-@property (retain, nonatomic) IBOutlet MKMapView *mapView;
-@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
-@property (nonatomic, retain) IBOutlet PlaceProfileVC *placeProfileVC;
-@property (nonatomic, retain) CLLocationManager *locationManager;
-@property (nonatomic, retain) NSMutableArray *placesList;
+@property (strong, nonatomic) IBOutlet UITableView *placesTableView;
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, strong) IBOutlet PlaceProfileVC *placeProfileVC;
+@property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, strong) NSMutableArray *placesList;
 
 - (IBAction)trocaMapaLista:(id)sender;
 - (IBAction)centerUserLocation:(id)sender;

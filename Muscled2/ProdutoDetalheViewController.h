@@ -22,22 +22,22 @@
 @property (nonatomic, copy) NSString *nomeDoProduto;
 @property (nonatomic, copy) NSString *textoDaDescricao;
 
-@property (retain, nonatomic) IBOutlet UITextView *descricaoTextView;
+@property (strong, nonatomic) IBOutlet UITextView *descricaoTextView;
 
-@property (retain, nonatomic) IBOutlet UIImageView *imagemDoProdutoImageView;
-@property (retain, nonatomic) IBOutlet UIImageView *tblCompImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *imagemDoProdutoImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *tblCompImageView;
 
-@property (retain, nonatomic) IBOutlet UIView *viewPrincipal;
-@property (retain, nonatomic) IBOutlet UIView *tblCompView;
+@property (strong, nonatomic) IBOutlet UIView *viewPrincipal;
+@property (strong, nonatomic) IBOutlet UIView *tblCompView;
 
-@property (retain, nonatomic) IBOutlet UIScrollView *fotoTextoScrollView;
-@property (retain, nonatomic) IBOutlet UIScrollView *tblCompScrollView;
+@property (strong, nonatomic) IBOutlet UIScrollView *fotoTextoScrollView;
+@property (strong, nonatomic) IBOutlet UIScrollView *tblCompScrollView;
 
-@property (nonatomic, retain) UIButton *flipIndicatorButton;
-@property (nonatomic, retain) UIImage *imgFotoDoProduto;
-@property (nonatomic, retain) UIImage *imgComparativo;
-@property (nonatomic, retain) UIImage *imgTabelaNutricional;
-@property (retain, nonatomic) IBOutlet UIButton *comparativoButton;
+@property (nonatomic, strong) UIButton *flipIndicatorButton;
+@property (nonatomic, strong) UIImage *imgFotoDoProduto;
+@property (nonatomic, strong) UIImage *imgComparativo;
+@property (nonatomic, strong) UIImage *imgTabelaNutricional;
+@property (strong, nonatomic) IBOutlet UIButton *comparativoButton;
 
 - (void) flipViewAtual;
 - (IBAction)flipView:(UIButton *)sender;

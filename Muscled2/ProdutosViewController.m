@@ -21,7 +21,7 @@
     if ([self resultadosBusca] == nil) {
         NSMutableArray *array = [[NSMutableArray alloc] init];
         [self setResultadosBusca:array];
-        [array release]; array=nil;
+         array=nil;
     }
     
     [[self resultadosBusca] removeAllObjects];
@@ -136,7 +136,6 @@
     
     self.hidesBottomBarWhenPushed = YES;
     [[self navigationController] pushViewController:detalheViewController animated:YES];
-    [detalheViewController release];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -173,7 +172,6 @@
     
     NSMutableArray *contents = [[NSMutableArray alloc] initWithArray:produtosArray];
     [self setListaProdutos:contents];
-    [contents release];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -195,13 +193,5 @@
     savedSearchTerms=nil;
 }
 
-- (void)dealloc{
-    [produtosArray release];
-    [_produtosTableView release];
-    [listaProdutos release];
-    [resultadosBusca release];
-    [savedSearchTerms release];
-    [super dealloc];
-}
 
 @end

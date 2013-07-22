@@ -13,10 +13,10 @@
     UIImage *fotoImage;
 }
 
-@property (retain, nonatomic) IBOutlet UIScrollView *fotoScrollView;
-@property (retain, nonatomic) IBOutlet UIImageView *fotoImageView;
-@property (nonatomic, retain) UIImage *fotoImage;
-@property (nonatomic, retain) NSString *nomeProduto;
+@property (strong, nonatomic) IBOutlet UIScrollView *fotoScrollView;
+@property (strong, nonatomic) IBOutlet UIImageView *fotoImageView;
+@property (nonatomic, strong) UIImage *fotoImage;
+@property (nonatomic, strong) NSString *nomeProduto;
 
 - (IBAction)backView;
 
