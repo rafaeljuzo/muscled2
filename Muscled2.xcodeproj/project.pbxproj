@@ -86,7 +86,6 @@
 		0ED36F241594C6AB00DABE73 /* cmpColagen Complex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED36F1F1594C6AB00DABE73 /* cmpColagen Complex@2x.png */; };
 		0ED36F251594C6AB00DABE73 /* cmpMuscled9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED36F201594C6AB00DABE73 /* cmpMuscled9@2x.png */; };
 		0ED36F261594C6AB00DABE73 /* cmpMuscledtrain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED36F211594C6AB00DABE73 /* cmpMuscledtrain@2x.png */; };
-		0ED6343B15A1EDDD005D0472 /* ProdutoFotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED6343915A1EDDD005D0472 /* ProdutoFotoViewController.m */; };
 		0ED6343C15A1EDDD005D0472 /* ProdutoFotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED6343A15A1EDDD005D0472 /* ProdutoFotoViewController.xib */; };
 		0ED6344515A228B9005D0472 /* fullBCAA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED6343E15A228B9005D0472 /* fullBCAA@2x.png */; };
 		0ED6344615A228B9005D0472 /* fullMuscle9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED6343F15A228B9005D0472 /* fullMuscle9@2x.png */; };
@@ -114,8 +113,6 @@
 		11BE317014A56BD800FB6E4E /* empresa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BE316814A56BD800FB6E4E /* empresa@2x.png */; };
 		11BE317114A56BD800FB6E4E /* produtos.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BE316914A56BD800FB6E4E /* produtos.png */; };
 		11BE317214A56BD800FB6E4E /* produtos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BE316A14A56BD800FB6E4E /* produtos@2x.png */; };
-		11BE317314A56BD800FB6E4E /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BE316B14A56BD800FB6E4E /* videos.png */; };
-		11BE317414A56BD800FB6E4E /* videos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BE316C14A56BD800FB6E4E /* videos@2x.png */; };
 		11BE317A14A56D5600FB6E4E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BE317614A56D5600FB6E4E /* Default.png */; };
 		11BE317B14A56D5600FB6E4E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BE317714A56D5600FB6E4E /* Default@2x.png */; };
 		11CA4E5014A58DD200AE4D7F /* produto.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11CA4E4F14A58DD200AE4D7F /* produto.plist */; };
@@ -137,6 +134,12 @@
 		A59D084315444883000FFCEE /* DietaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59D084115444883000FFCEE /* DietaViewController.xib */; };
 		A59D0846154448B8000FFCEE /* CalculaDieta.m in Sources */ = {isa = PBXBuildFile; fileRef = A59D0845154448B8000FFCEE /* CalculaDieta.m */; };
 		C848B01F179DDB7A00D63897 /* BuscarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C848B01E179DDB7A00D63897 /* BuscarManager.m */; };
+		C848B0CA179DF2C700D63897 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C848B046179DF2C600D63897 /* HomeViewController.xib */; };
+		C848B0CB179DF2C700D63897 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C848B048179DF2C600D63897 /* InfoPlist.strings */; };
+		C848B0CC179DF2C700D63897 /* ProdutosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C848B04A179DF2C700D63897 /* ProdutosViewController.xib */; };
+		C848B10C179DF2C700D63897 /* ProdutoFotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C848B092179DF2C700D63897 /* ProdutoFotoViewController.m */; };
+		C848B11F179DF2C700D63897 /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = C848B0A6179DF2C700D63897 /* videos.png */; };
+		C848B120179DF2C700D63897 /* videos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C848B0A7179DF2C700D63897 /* videos@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -287,6 +290,140 @@
 		A59D0845154448B8000FFCEE /* CalculaDieta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculaDieta.m; sourceTree = "<group>"; };
 		C848B01D179DDB7A00D63897 /* BuscarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuscarManager.h; sourceTree = "<group>"; };
 		C848B01E179DDB7A00D63897 /* BuscarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuscarManager.m; sourceTree = "<group>"; };
+		C848B021179DF2C600D63897 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C848B022179DF2C600D63897 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C848B023179DF2C600D63897 /* BCAA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BCAA@2x.png"; sourceTree = "<group>"; };
+		C848B024179DF2C600D63897 /* buscar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buscar.png; sourceTree = "<group>"; };
+		C848B025179DF2C600D63897 /* buscar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buscar@2x.png"; sourceTree = "<group>"; };
+		C848B026179DF2C600D63897 /* BuscarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuscarManager.h; sourceTree = "<group>"; };
+		C848B027179DF2C600D63897 /* BuscarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuscarManager.m; sourceTree = "<group>"; };
+		C848B028179DF2C600D63897 /* BuscarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuscarViewController.h; sourceTree = "<group>"; };
+		C848B029179DF2C600D63897 /* BuscarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuscarViewController.m; sourceTree = "<group>"; };
+		C848B02A179DF2C600D63897 /* BuscarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuscarViewController.xib; sourceTree = "<group>"; };
+		C848B02B179DF2C600D63897 /* buttonComparativo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonComparativo.png; sourceTree = "<group>"; };
+		C848B02C179DF2C600D63897 /* buttonContato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonContato.png; sourceTree = "<group>"; };
+		C848B02D179DF2C600D63897 /* buttonOndeComprar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonOndeComprar.png; sourceTree = "<group>"; };
+		C848B02E179DF2C600D63897 /* CalculaDieta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculaDieta.h; sourceTree = "<group>"; };
+		C848B02F179DF2C600D63897 /* CalculaDieta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculaDieta.m; sourceTree = "<group>"; };
+		C848B030179DF2C600D63897 /* Cellpower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cellpower@2x.png"; sourceTree = "<group>"; };
+		C848B031179DF2C600D63897 /* cmpBCAA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmpBCAA@2x.png"; sourceTree = "<group>"; };
+		C848B032179DF2C600D63897 /* cmpCellPower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmpCellPower@2x.png"; sourceTree = "<group>"; };
+		C848B033179DF2C600D63897 /* cmpColagen Complex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmpColagen Complex@2x.png"; sourceTree = "<group>"; };
+		C848B034179DF2C600D63897 /* cmpMuscled9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmpMuscled9@2x.png"; sourceTree = "<group>"; };
+		C848B035179DF2C600D63897 /* cmpMuscledtrain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmpMuscledtrain@2x.png"; sourceTree = "<group>"; };
+		C848B036179DF2C600D63897 /* cmpNitrowhey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cmpNitrowhey@2x.png"; sourceTree = "<group>"; };
+		C848B037179DF2C600D63897 /* Colagen Complex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Colagen Complex@2x.png"; sourceTree = "<group>"; };
+		C848B038179DF2C600D63897 /* contato@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contato@2x.png"; sourceTree = "<group>"; };
+		C848B039179DF2C600D63897 /* ContatoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoViewController.h; sourceTree = "<group>"; };
+		C848B03A179DF2C600D63897 /* ContatoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoViewController.m; sourceTree = "<group>"; };
+		C848B03B179DF2C600D63897 /* ContatoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatoViewController.xib; sourceTree = "<group>"; };
+		C848B03C179DF2C600D63897 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C848B03D179DF2C600D63897 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C848B03E179DF2C600D63897 /* descricaoDosProdutos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = descricaoDosProdutos.plist; sourceTree = "<group>"; };
+		C848B03F179DF2C600D63897 /* dieta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dieta.png; sourceTree = "<group>"; };
+		C848B040179DF2C600D63897 /* dieta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dieta@2x.png"; sourceTree = "<group>"; };
+		C848B041179DF2C600D63897 /* DietaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietaViewController.h; sourceTree = "<group>"; };
+		C848B042179DF2C600D63897 /* DietaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietaViewController.m; sourceTree = "<group>"; };
+		C848B043179DF2C600D63897 /* DietaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietaViewController.xib; sourceTree = "<group>"; };
+		C848B044179DF2C600D63897 /* empresa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empresa.png; sourceTree = "<group>"; };
+		C848B045179DF2C600D63897 /* empresa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empresa@2x.png"; sourceTree = "<group>"; };
+		C848B047179DF2C600D63897 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HomeViewController.xib; sourceTree = "<group>"; };
+		C848B049179DF2C600D63897 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C848B04B179DF2C700D63897 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ProdutosViewController.xib; sourceTree = "<group>"; };
+		C848B04C179DF2C700D63897 /* fotoLoja1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fotoLoja1@2x.png"; sourceTree = "<group>"; };
+		C848B04D179DF2C700D63897 /* fullBCAA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullBCAA@2x.png"; sourceTree = "<group>"; };
+		C848B04E179DF2C700D63897 /* fullCellpower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullCellpower@2x.png"; sourceTree = "<group>"; };
+		C848B04F179DF2C700D63897 /* fullColagen Complex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullColagen Complex@2x.png"; sourceTree = "<group>"; };
+		C848B050179DF2C700D63897 /* fullMuscle9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullMuscle9@2x.png"; sourceTree = "<group>"; };
+		C848B051179DF2C700D63897 /* fullMusclemass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullMusclemass@2x.png"; sourceTree = "<group>"; };
+		C848B052179DF2C700D63897 /* fullMuscletrain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullMuscletrain@2x.png"; sourceTree = "<group>"; };
+		C848B053179DF2C700D63897 /* fullNitrowhey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullNitrowhey@2x.png"; sourceTree = "<group>"; };
+		C848B054179DF2C700D63897 /* fullPowermaize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullPowermaize@2x.png"; sourceTree = "<group>"; };
+		C848B055179DF2C700D63897 /* fullShakeprotein@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullShakeprotein@2x.png"; sourceTree = "<group>"; };
+		C848B056179DF2C700D63897 /* Fundo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fundo.png; sourceTree = "<group>"; };
+		C848B057179DF2C700D63897 /* HelveticaNeue.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue.dfont; sourceTree = "<group>"; };
+		C848B058179DF2C700D63897 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C848B059179DF2C700D63897 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C848B05A179DF2C700D63897 /* icBCAA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icBCAA@2x.png"; sourceTree = "<group>"; };
+		C848B05B179DF2C700D63897 /* icCellpower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icCellpower@2x.png"; sourceTree = "<group>"; };
+		C848B05C179DF2C700D63897 /* icColagen Complex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icColagen Complex@2x.png"; sourceTree = "<group>"; };
+		C848B05D179DF2C700D63897 /* icFeminino@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icFeminino@2x.png"; sourceTree = "<group>"; };
+		C848B05E179DF2C700D63897 /* icMasculino@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icMasculino@2x.png"; sourceTree = "<group>"; };
+		C848B05F179DF2C700D63897 /* icMuscle9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icMuscle9@2x.png"; sourceTree = "<group>"; };
+		C848B060179DF2C700D63897 /* icMusclelipo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icMusclelipo@2x.png"; sourceTree = "<group>"; };
+		C848B061179DF2C700D63897 /* icMusclemass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icMusclemass@2x.png"; sourceTree = "<group>"; };
+		C848B062179DF2C700D63897 /* icMusclemeal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icMusclemeal@2x.png"; sourceTree = "<group>"; };
+		C848B063179DF2C700D63897 /* icMuscletrain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icMuscletrain@2x.png"; sourceTree = "<group>"; };
+		C848B064179DF2C700D63897 /* icMusclevapor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icMusclevapor@2x.png"; sourceTree = "<group>"; };
+		C848B065179DF2C700D63897 /* icNitrowhey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icNitrowhey@2x.png"; sourceTree = "<group>"; };
+		C848B066179DF2C700D63897 /* Icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-small.png"; sourceTree = "<group>"; };
+		C848B067179DF2C700D63897 /* Icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-small@2x.png"; sourceTree = "<group>"; };
+		C848B068179DF2C700D63897 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C848B069179DF2C700D63897 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		C848B06A179DF2C700D63897 /* icone-maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icone-maps.png"; sourceTree = "<group>"; };
+		C848B06B179DF2C700D63897 /* iconFacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconFacebook.png; sourceTree = "<group>"; };
+		C848B06C179DF2C700D63897 /* iconSite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSite.png; sourceTree = "<group>"; };
+		C848B06D179DF2C700D63897 /* iconTwitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconTwitter.png; sourceTree = "<group>"; };
+		C848B06E179DF2C700D63897 /* iconVimeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconVimeo.png; sourceTree = "<group>"; };
+		C848B06F179DF2C700D63897 /* iconYoutube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconYoutube.png; sourceTree = "<group>"; };
+		C848B070179DF2C700D63897 /* icPowermaize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icPowermaize@2x.png"; sourceTree = "<group>"; };
+		C848B071179DF2C700D63897 /* icShakeprotein@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icShakeprotein@2x.png"; sourceTree = "<group>"; };
+		C848B072179DF2C700D63897 /* imagemHome1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagemHome1.png; sourceTree = "<group>"; };
+		C848B073179DF2C700D63897 /* imagemHome2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagemHome2.png; sourceTree = "<group>"; };
+		C848B074179DF2C700D63897 /* imagemHome3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagemHome3.png; sourceTree = "<group>"; };
+		C848B075179DF2C700D63897 /* imagemHome4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagemHome4.png; sourceTree = "<group>"; };
+		C848B076179DF2C700D63897 /* imagemHome5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagemHome5.png; sourceTree = "<group>"; };
+		C848B077179DF2C700D63897 /* imgensHomeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imgensHomeList.plist; sourceTree = "<group>"; };
+		C848B078179DF2C700D63897 /* layout_dieta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layout_dieta.png; sourceTree = "<group>"; };
+		C848B079179DF2C700D63897 /* layout_loja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layout_loja.png; sourceTree = "<group>"; };
+		C848B07B179DF2C700D63897 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C848B07C179DF2C700D63897 /* mais.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mais.png; sourceTree = "<group>"; };
+		C848B07D179DF2C700D63897 /* mais@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mais@2x.png"; sourceTree = "<group>"; };
+		C848B07E179DF2C700D63897 /* MaisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaisViewController.h; sourceTree = "<group>"; };
+		C848B07F179DF2C700D63897 /* MaisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaisViewController.m; sourceTree = "<group>"; };
+		C848B080179DF2C700D63897 /* MaisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaisViewController.xib; sourceTree = "<group>"; };
+		C848B081179DF2C700D63897 /* Muscle9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Muscle9@2x.png"; sourceTree = "<group>"; };
+		C848B082179DF2C700D63897 /* Muscled2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Muscled2-Info.plist"; sourceTree = "<group>"; };
+		C848B083179DF2C700D63897 /* Muscled2-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Muscled2-Prefix.pch"; sourceTree = "<group>"; };
+		C848B084179DF2C700D63897 /* Musclemass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Musclemass@2x.png"; sourceTree = "<group>"; };
+		C848B085179DF2C700D63897 /* Muscletrain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Muscletrain@2x.png"; sourceTree = "<group>"; };
+		C848B086179DF2C700D63897 /* Musclevapor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Musclevapor@2x.png"; sourceTree = "<group>"; };
+		C848B087179DF2C700D63897 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		C848B088179DF2C700D63897 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		C848B089179DF2C700D63897 /* Nitrowhey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nitrowhey@2x.png"; sourceTree = "<group>"; };
+		C848B08A179DF2C700D63897 /* placesList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = placesList.plist; sourceTree = "<group>"; };
+		C848B08B179DF2C700D63897 /* popOverImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popOverImage.png; sourceTree = "<group>"; };
+		C848B08C179DF2C700D63897 /* Powermaize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powermaize@2x.png"; sourceTree = "<group>"; };
+		C848B08D179DF2C700D63897 /* produto.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = produto.plist; sourceTree = "<group>"; };
+		C848B08E179DF2C700D63897 /* ProdutoDetalheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdutoDetalheViewController.h; sourceTree = "<group>"; };
+		C848B08F179DF2C700D63897 /* ProdutoDetalheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutoDetalheViewController.m; sourceTree = "<group>"; };
+		C848B090179DF2C700D63897 /* ProdutoDetalheViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProdutoDetalheViewController.xib; sourceTree = "<group>"; };
+		C848B091179DF2C700D63897 /* ProdutoFotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdutoFotoViewController.h; sourceTree = "<group>"; };
+		C848B092179DF2C700D63897 /* ProdutoFotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutoFotoViewController.m; sourceTree = "<group>"; };
+		C848B093179DF2C700D63897 /* ProdutoFotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProdutoFotoViewController.xib; sourceTree = "<group>"; };
+		C848B094179DF2C700D63897 /* produtoIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "produtoIcon@2x.png"; sourceTree = "<group>"; };
+		C848B095179DF2C700D63897 /* produtos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = produtos.png; sourceTree = "<group>"; };
+		C848B096179DF2C700D63897 /* produtos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "produtos@2x.png"; sourceTree = "<group>"; };
+		C848B097179DF2C700D63897 /* ProdutosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdutosViewController.h; sourceTree = "<group>"; };
+		C848B098179DF2C700D63897 /* ProdutosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutosViewController.m; sourceTree = "<group>"; };
+		C848B099179DF2C700D63897 /* Shakeprotein@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shakeprotein@2x.png"; sourceTree = "<group>"; };
+		C848B09A179DF2C700D63897 /* tblBCAA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tblBCAA@2x.png"; sourceTree = "<group>"; };
+		C848B09B179DF2C700D63897 /* tblCellpower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tblCellpower@2x.png"; sourceTree = "<group>"; };
+		C848B09C179DF2C700D63897 /* tblColagen Complex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tblColagen Complex@2x.png"; sourceTree = "<group>"; };
+		C848B09D179DF2C700D63897 /* tblIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tblIcon@2x.png"; sourceTree = "<group>"; };
+		C848B09E179DF2C700D63897 /* tblMuscle9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tblMuscle9@2x.png"; sourceTree = "<group>"; };
+		C848B09F179DF2C700D63897 /* tblMusclemass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tblMusclemass@2x.png"; sourceTree = "<group>"; };
+		C848B0A0179DF2C700D63897 /* tblMusclevapor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tblMusclevapor@2x.png"; sourceTree = "<group>"; };
+		C848B0A1179DF2C700D63897 /* tblNitrowhey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tblNitrowhey@2x.png"; sourceTree = "<group>"; };
+		C848B0A2179DF2C700D63897 /* tblPowermaize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tblPowermaize@2x.png"; sourceTree = "<group>"; };
+		C848B0A3179DF2C700D63897 /* tblShakeprotein@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tblShakeprotein@2x.png"; sourceTree = "<group>"; };
+		C848B0A4179DF2C700D63897 /* userLocationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userLocationIcon.png; sourceTree = "<group>"; };
+		C848B0A5179DF2C700D63897 /* userLocationIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userLocationIcon@2x.png"; sourceTree = "<group>"; };
+		C848B0A6179DF2C700D63897 /* videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videos.png; sourceTree = "<group>"; };
+		C848B0A7179DF2C700D63897 /* videos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videos@2x.png"; sourceTree = "<group>"; };
+		C848B0A8179DF2C700D63897 /* VideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosViewController.h; sourceTree = "<group>"; };
+		C848B0A9179DF2C700D63897 /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosViewController.m; sourceTree = "<group>"; };
+		C848B0AA179DF2C700D63897 /* VideosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideosViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -548,6 +685,7 @@
 				0ECA924314AA3D1D00164C8D /* MyAnnotation.m */,
 				0E9F69E914AB560D003BB7FF /* PlaceProfileVC.h */,
 				0E9F69EA14AB560D003BB7FF /* PlaceProfileVC.m */,
+				C848B020179DF2C600D63897 /* Muscled2 */,
 				C848B01D179DDB7A00D63897 /* BuscarManager.h */,
 				C848B01E179DDB7A00D63897 /* BuscarManager.m */,
 			);
@@ -726,6 +864,155 @@
 			name = Dieta;
 			sourceTree = "<group>";
 		};
+		C848B020179DF2C600D63897 /* Muscled2 */ = {
+			isa = PBXGroup;
+			children = (
+				C848B021179DF2C600D63897 /* AppDelegate.h */,
+				C848B022179DF2C600D63897 /* AppDelegate.m */,
+				C848B023179DF2C600D63897 /* BCAA@2x.png */,
+				C848B024179DF2C600D63897 /* buscar.png */,
+				C848B025179DF2C600D63897 /* buscar@2x.png */,
+				C848B026179DF2C600D63897 /* BuscarManager.h */,
+				C848B027179DF2C600D63897 /* BuscarManager.m */,
+				C848B028179DF2C600D63897 /* BuscarViewController.h */,
+				C848B029179DF2C600D63897 /* BuscarViewController.m */,
+				C848B02A179DF2C600D63897 /* BuscarViewController.xib */,
+				C848B02B179DF2C600D63897 /* buttonComparativo.png */,
+				C848B02C179DF2C600D63897 /* buttonContato.png */,
+				C848B02D179DF2C600D63897 /* buttonOndeComprar.png */,
+				C848B02E179DF2C600D63897 /* CalculaDieta.h */,
+				C848B02F179DF2C600D63897 /* CalculaDieta.m */,
+				C848B030179DF2C600D63897 /* Cellpower@2x.png */,
+				C848B031179DF2C600D63897 /* cmpBCAA@2x.png */,
+				C848B032179DF2C600D63897 /* cmpCellPower@2x.png */,
+				C848B033179DF2C600D63897 /* cmpColagen Complex@2x.png */,
+				C848B034179DF2C600D63897 /* cmpMuscled9@2x.png */,
+				C848B035179DF2C600D63897 /* cmpMuscledtrain@2x.png */,
+				C848B036179DF2C600D63897 /* cmpNitrowhey@2x.png */,
+				C848B037179DF2C600D63897 /* Colagen Complex@2x.png */,
+				C848B038179DF2C600D63897 /* contato@2x.png */,
+				C848B039179DF2C600D63897 /* ContatoViewController.h */,
+				C848B03A179DF2C600D63897 /* ContatoViewController.m */,
+				C848B03B179DF2C600D63897 /* ContatoViewController.xib */,
+				C848B03C179DF2C600D63897 /* Default.png */,
+				C848B03D179DF2C600D63897 /* Default@2x.png */,
+				C848B03E179DF2C600D63897 /* descricaoDosProdutos.plist */,
+				C848B03F179DF2C600D63897 /* dieta.png */,
+				C848B040179DF2C600D63897 /* dieta@2x.png */,
+				C848B041179DF2C600D63897 /* DietaViewController.h */,
+				C848B042179DF2C600D63897 /* DietaViewController.m */,
+				C848B043179DF2C600D63897 /* DietaViewController.xib */,
+				C848B044179DF2C600D63897 /* empresa.png */,
+				C848B045179DF2C600D63897 /* empresa@2x.png */,
+				C848B046179DF2C600D63897 /* HomeViewController.xib */,
+				C848B048179DF2C600D63897 /* InfoPlist.strings */,
+				C848B04A179DF2C700D63897 /* ProdutosViewController.xib */,
+				C848B04C179DF2C700D63897 /* fotoLoja1@2x.png */,
+				C848B04D179DF2C700D63897 /* fullBCAA@2x.png */,
+				C848B04E179DF2C700D63897 /* fullCellpower@2x.png */,
+				C848B04F179DF2C700D63897 /* fullColagen Complex@2x.png */,
+				C848B050179DF2C700D63897 /* fullMuscle9@2x.png */,
+				C848B051179DF2C700D63897 /* fullMusclemass@2x.png */,
+				C848B052179DF2C700D63897 /* fullMuscletrain@2x.png */,
+				C848B053179DF2C700D63897 /* fullNitrowhey@2x.png */,
+				C848B054179DF2C700D63897 /* fullPowermaize@2x.png */,
+				C848B055179DF2C700D63897 /* fullShakeprotein@2x.png */,
+				C848B056179DF2C700D63897 /* Fundo.png */,
+				C848B057179DF2C700D63897 /* HelveticaNeue.dfont */,
+				C848B058179DF2C700D63897 /* HomeViewController.h */,
+				C848B059179DF2C700D63897 /* HomeViewController.m */,
+				C848B05A179DF2C700D63897 /* icBCAA@2x.png */,
+				C848B05B179DF2C700D63897 /* icCellpower@2x.png */,
+				C848B05C179DF2C700D63897 /* icColagen Complex@2x.png */,
+				C848B05D179DF2C700D63897 /* icFeminino@2x.png */,
+				C848B05E179DF2C700D63897 /* icMasculino@2x.png */,
+				C848B05F179DF2C700D63897 /* icMuscle9@2x.png */,
+				C848B060179DF2C700D63897 /* icMusclelipo@2x.png */,
+				C848B061179DF2C700D63897 /* icMusclemass@2x.png */,
+				C848B062179DF2C700D63897 /* icMusclemeal@2x.png */,
+				C848B063179DF2C700D63897 /* icMuscletrain@2x.png */,
+				C848B064179DF2C700D63897 /* icMusclevapor@2x.png */,
+				C848B065179DF2C700D63897 /* icNitrowhey@2x.png */,
+				C848B066179DF2C700D63897 /* Icon-small.png */,
+				C848B067179DF2C700D63897 /* Icon-small@2x.png */,
+				C848B068179DF2C700D63897 /* Icon.png */,
+				C848B069179DF2C700D63897 /* Icon@2x.png */,
+				C848B06A179DF2C700D63897 /* icone-maps.png */,
+				C848B06B179DF2C700D63897 /* iconFacebook.png */,
+				C848B06C179DF2C700D63897 /* iconSite.png */,
+				C848B06D179DF2C700D63897 /* iconTwitter.png */,
+				C848B06E179DF2C700D63897 /* iconVimeo.png */,
+				C848B06F179DF2C700D63897 /* iconYoutube.png */,
+				C848B070179DF2C700D63897 /* icPowermaize@2x.png */,
+				C848B071179DF2C700D63897 /* icShakeprotein@2x.png */,
+				C848B072179DF2C700D63897 /* imagemHome1.png */,
+				C848B073179DF2C700D63897 /* imagemHome2.png */,
+				C848B074179DF2C700D63897 /* imagemHome3.png */,
+				C848B075179DF2C700D63897 /* imagemHome4.png */,
+				C848B076179DF2C700D63897 /* imagemHome5.png */,
+				C848B077179DF2C700D63897 /* imgensHomeList.plist */,
+				C848B078179DF2C700D63897 /* layout_dieta.png */,
+				C848B079179DF2C700D63897 /* layout_loja.png */,
+				C848B07A179DF2C700D63897 /* libs */,
+				C848B07B179DF2C700D63897 /* main.m */,
+				C848B07C179DF2C700D63897 /* mais.png */,
+				C848B07D179DF2C700D63897 /* mais@2x.png */,
+				C848B07E179DF2C700D63897 /* MaisViewController.h */,
+				C848B07F179DF2C700D63897 /* MaisViewController.m */,
+				C848B080179DF2C700D63897 /* MaisViewController.xib */,
+				C848B081179DF2C700D63897 /* Muscle9@2x.png */,
+				C848B082179DF2C700D63897 /* Muscled2-Info.plist */,
+				C848B083179DF2C700D63897 /* Muscled2-Prefix.pch */,
+				C848B084179DF2C700D63897 /* Musclemass@2x.png */,
+				C848B085179DF2C700D63897 /* Muscletrain@2x.png */,
+				C848B086179DF2C700D63897 /* Musclevapor@2x.png */,
+				C848B087179DF2C700D63897 /* MyAnnotation.h */,
+				C848B088179DF2C700D63897 /* MyAnnotation.m */,
+				C848B089179DF2C700D63897 /* Nitrowhey@2x.png */,
+				C848B08A179DF2C700D63897 /* placesList.plist */,
+				C848B08B179DF2C700D63897 /* popOverImage.png */,
+				C848B08C179DF2C700D63897 /* Powermaize@2x.png */,
+				C848B08D179DF2C700D63897 /* produto.plist */,
+				C848B08E179DF2C700D63897 /* ProdutoDetalheViewController.h */,
+				C848B08F179DF2C700D63897 /* ProdutoDetalheViewController.m */,
+				C848B090179DF2C700D63897 /* ProdutoDetalheViewController.xib */,
+				C848B091179DF2C700D63897 /* ProdutoFotoViewController.h */,
+				C848B092179DF2C700D63897 /* ProdutoFotoViewController.m */,
+				C848B093179DF2C700D63897 /* ProdutoFotoViewController.xib */,
+				C848B094179DF2C700D63897 /* produtoIcon@2x.png */,
+				C848B095179DF2C700D63897 /* produtos.png */,
+				C848B096179DF2C700D63897 /* produtos@2x.png */,
+				C848B097179DF2C700D63897 /* ProdutosViewController.h */,
+				C848B098179DF2C700D63897 /* ProdutosViewController.m */,
+				C848B099179DF2C700D63897 /* Shakeprotein@2x.png */,
+				C848B09A179DF2C700D63897 /* tblBCAA@2x.png */,
+				C848B09B179DF2C700D63897 /* tblCellpower@2x.png */,
+				C848B09C179DF2C700D63897 /* tblColagen Complex@2x.png */,
+				C848B09D179DF2C700D63897 /* tblIcon@2x.png */,
+				C848B09E179DF2C700D63897 /* tblMuscle9@2x.png */,
+				C848B09F179DF2C700D63897 /* tblMusclemass@2x.png */,
+				C848B0A0179DF2C700D63897 /* tblMusclevapor@2x.png */,
+				C848B0A1179DF2C700D63897 /* tblNitrowhey@2x.png */,
+				C848B0A2179DF2C700D63897 /* tblPowermaize@2x.png */,
+				C848B0A3179DF2C700D63897 /* tblShakeprotein@2x.png */,
+				C848B0A4179DF2C700D63897 /* userLocationIcon.png */,
+				C848B0A5179DF2C700D63897 /* userLocationIcon@2x.png */,
+				C848B0A6179DF2C700D63897 /* videos.png */,
+				C848B0A7179DF2C700D63897 /* videos@2x.png */,
+				C848B0A8179DF2C700D63897 /* VideosViewController.h */,
+				C848B0A9179DF2C700D63897 /* VideosViewController.m */,
+				C848B0AA179DF2C700D63897 /* VideosViewController.xib */,
+			);
+			name = Muscled2;
+			sourceTree = "<group>";
+		};
+		C848B07A179DF2C700D63897 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -752,7 +1039,7 @@
 		11DF2C2114A53C9100BAC2BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 11DF2C2414A53C9100BAC2BF /* Build configuration list for PBXProject "Muscled2" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -786,8 +1073,6 @@
 				11BE317014A56BD800FB6E4E /* empresa@2x.png in Resources */,
 				11BE317114A56BD800FB6E4E /* produtos.png in Resources */,
 				11BE317214A56BD800FB6E4E /* produtos@2x.png in Resources */,
-				11BE317314A56BD800FB6E4E /* videos.png in Resources */,
-				11BE317414A56BD800FB6E4E /* videos@2x.png in Resources */,
 				11BE317A14A56D5600FB6E4E /* Default.png in Resources */,
 				11BE317B14A56D5600FB6E4E /* Default@2x.png in Resources */,
 				11647D1614A56EF300067E77 /* Icon@2x.png in Resources */,
@@ -882,6 +1167,11 @@
 				0EC091BA15A7647B00ACFA00 /* HelveticaNeue.dfont in Resources */,
 				0E966C1B15ACAFE20025C9CB /* icMusclelipo@2x.png in Resources */,
 				0E966C1C15ACAFE20025C9CB /* icMusclemeal@2x.png in Resources */,
+				C848B0CA179DF2C700D63897 /* HomeViewController.xib in Resources */,
+				C848B0CB179DF2C700D63897 /* InfoPlist.strings in Resources */,
+				C848B0CC179DF2C700D63897 /* ProdutosViewController.xib in Resources */,
+				C848B11F179DF2C700D63897 /* videos.png in Resources */,
+				C848B120179DF2C700D63897 /* videos@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -905,8 +1195,8 @@
 				0E1F6B37153DE0620031ADB7 /* MaisViewController.m in Sources */,
 				A59D084215444883000FFCEE /* DietaViewController.m in Sources */,
 				A59D0846154448B8000FFCEE /* CalculaDieta.m in Sources */,
-				0ED6343B15A1EDDD005D0472 /* ProdutoFotoViewController.m in Sources */,
 				C848B01F179DDB7A00D63897 /* BuscarManager.m in Sources */,
+				C848B10C179DF2C700D63897 /* ProdutoFotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,6 +1227,30 @@
 			name = ProdutosViewController.xib;
 			sourceTree = "<group>";
 		};
+		C848B046179DF2C600D63897 /* HomeViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C848B047179DF2C600D63897 /* en */,
+			);
+			name = HomeViewController.xib;
+			sourceTree = "<group>";
+		};
+		C848B048179DF2C600D63897 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C848B049179DF2C600D63897 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C848B04A179DF2C700D63897 /* ProdutosViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C848B04B179DF2C700D63897 /* en */,
+			);
+			name = ProdutosViewController.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -948,6 +1262,10 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
@@ -956,6 +1274,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -973,6 +1292,7 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1000,6 +1320,10 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -1015,6 +1339,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PROVISIONING_PROFILE = "";
@@ -1030,6 +1355,10 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -1038,6 +1367,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -1054,6 +1384,7 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1080,6 +1411,7 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
