@@ -15,17 +15,13 @@
 @end
 
 @implementation DietaViewController
-@synthesize pesoTextField;
-@synthesize objetivoSegControl;
-@synthesize resultadoTableView;
 
 - (IBAction)calcularDieta{
-    [pesoTextField resignFirstResponder];
+    [self.pesoTextField resignFirstResponder];
     CalculaDieta *calc = [[CalculaDieta alloc]init];
     resultadoCalc = [calc calculaDietaParaPeso:
-                    [pesoTextField.text doubleValue] objetivo:objetivoSegControl.selectedSegmentIndex];
-    [calc release];
-    [resultadoTableView reloadData];
+                    [self.pesoTextField.text doubleValue] objetivo:self.objetivoSegControl.selectedSegmentIndex];
+    [self.resultadoTableView reloadData];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -44,15 +40,6 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)viewDidUnload
-{
-    [self setPesoTextField:nil];
-    [self setObjetivoSegControl:nil];
-    [self setResultadoTableView:nil];
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -107,14 +94,8 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [pesoTextField resignFirstResponder];
+    [self.pesoTextField resignFirstResponder];
 }
 
 
-- (void)dealloc {
-    [pesoTextField release];
-    [objetivoSegControl release];
-    [resultadoTableView release];
-    [super dealloc];
-}
 @end

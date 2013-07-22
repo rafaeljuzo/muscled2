@@ -11,9 +11,9 @@
 
 @interface DietaViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (retain, nonatomic) IBOutlet UITextField *pesoTextField;
-@property (retain, nonatomic) IBOutlet UISegmentedControl *objetivoSegControl;
-@property (retain, nonatomic) IBOutlet UITableView *resultadoTableView;
+@property (strong, nonatomic) IBOutlet UITextField *pesoTextField;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *objetivoSegControl;
+@property (strong, nonatomic) IBOutlet UITableView *resultadoTableView;
 
 - (IBAction)calcularDieta;
 
