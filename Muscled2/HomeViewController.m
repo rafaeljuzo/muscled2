@@ -10,13 +10,6 @@
 
 @implementation HomeViewController
 
-@synthesize contentScroll = _contentScroll;
-@synthesize contentPage = _contentPage;
-@synthesize popButton;
-@synthesize contentTextView = _contentTextView;
-@synthesize imageList;
-@synthesize popOverViewController = _popOverViewController;
-
 #pragma mark - ViewMethods
 
 - (void) setupView{ 
@@ -25,7 +18,7 @@
     NSString *pathDasImagens = [[NSBundle mainBundle] pathForResource:@"imgensHomeList" ofType:@"plist"];
     self.imageList = [NSArray arrayWithContentsOfFile:pathDasImagens];
     
-	for (int i = 0; i < imageList.count; i++) {
+	for (int i = 0; i < self.imageList.count; i++) {
         
         CGRect frame;
         frame.origin.x = self.contentScroll.frame.size.width * i;
@@ -33,15 +26,15 @@
         frame.size = self.contentScroll.frame.size;
         
         UIImageView *tempImageView = [[UIImageView alloc] initWithFrame:frame];
-        tempImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",[imageList objectAtIndex:i]]];
+        tempImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",[self.imageList objectAtIndex:i]]];
         [self.contentScroll addSubview:tempImageView];
 
 	}
 
-	self.contentScroll.contentSize = CGSizeMake(self.contentScroll.frame.size.width * imageList.count, self.contentScroll.frame.size.height);
+	self.contentScroll.contentSize = CGSizeMake(self.contentScroll.frame.size.width * self.imageList.count, self.contentScroll.frame.size.height);
 	
 	self.contentPage.currentPage = 0;
-	self.contentPage.numberOfPages = imageList.count;
+	self.contentPage.numberOfPages = self.imageList.count;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -85,17 +78,6 @@
     [self setupView];
 }
 
-- (void)viewDidUnload
-{
-    [self setContentPage:nil];
-    [self setContentScroll:nil];
-    [self setPopButton:nil];
-    [self setContentTextView:nil];
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -123,16 +105,6 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (void) dealloc{
-    [self.contentScroll release];
-    [self.contentPage release];
-    [imageList release];
-    [contentList release];
-    [popButton release];
-    [self.contentTextView release];
-    [super dealloc];
-}
-
 #pragma mark - IBActions
 
 - (IBAction)changePage{
@@ -142,11 +114,7 @@
 	frame.origin.y = 0;
 	frame.size = self.contentScroll.frame.size;
 	[self.contentScroll scrollRectToVisible:frame animated:YES];
-	
-	// Keep track of when scrolls happen in response to the page control    
-	// value changing. If we don't do this, a noticeable "flashing" occurs
-	// as the the scroll delegate will temporarily switch back the page
-	// number.
+
 	pageControlBeingUsed = YES;
 }
 

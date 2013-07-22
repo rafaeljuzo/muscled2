@@ -10,17 +10,15 @@
 
 @interface HomeViewController : UIViewController <UIScrollViewDelegate, UIPopoverControllerDelegate>{
     int pageNumber;
-    NSArray *imageList;
-    NSArray *contentList;
     BOOL pageControlBeingUsed;
 }
-@property (nonatomic, weak) NSArray *imageList;
-@property (nonatomic, retain) IBOutlet UIViewController *popOverViewController;
+@property (nonatomic, strong) NSArray *imageList;
+@property (nonatomic, strong) IBOutlet UIViewController *popOverViewController;
 
-@property (nonatomic, retain) IBOutlet UIScrollView *contentScroll;
-@property (nonatomic, retain) IBOutlet UIPageControl *contentPage;
-@property (retain, nonatomic) IBOutlet UIButton *popButton;
-@property (retain, nonatomic) IBOutlet UITextView *contentTextView;
+@property (nonatomic, strong) IBOutlet UIScrollView *contentScroll;
+@property (nonatomic, strong) IBOutlet UIPageControl *contentPage;
+@property (nonatomic, strong) IBOutlet UIButton *popButton;
+@property (nonatomic, strong) IBOutlet UITextView *contentTextView;
 
 - (IBAction)changePage;
 - (IBAction)showPopOver:(id)sender;
