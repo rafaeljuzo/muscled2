@@ -38,12 +38,6 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
 
 - (void) viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES];
@@ -68,14 +62,12 @@
             ContatoViewController *contatoVC = [[ContatoViewController alloc] init];
             contatoVC.hidesBottomBarWhenPushed = YES;
             [[self navigationController] pushViewController:contatoVC animated:YES];
-            [contatoVC release];
         }
             break;
         case 1:{
             BuscarViewController *buscarVC = [[BuscarViewController alloc] init];
             buscarVC.hidesBottomBarWhenPushed = YES;
             [[self navigationController] pushViewController:buscarVC animated:YES];
-            [buscarVC release];
         }
             break;
         case 2:
@@ -95,9 +87,9 @@
             break;
     }
     
-    if (link != @"") {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:link]];
-    }
+//    if (link != @"") {
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:link]];
+//    }
 
 }
 
