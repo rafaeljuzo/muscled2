@@ -22,11 +22,18 @@
 @synthesize searchBar = _searchBar;
 @synthesize userLocation = _userLocation;
 
+- (void)viewDidLoad
+{
+}
+
+
 #pragma mark - MAPKIT delegate
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>) annotation
 {
+    BuscarManager * array = [[BuscarManager alloc]init];
+    [array getAllStores];
     MKPinAnnotationView *annov = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"Current location"];
-    annov.animatesDrop = TRUE;
+    annov.animatesDrop = YES;
     annov.canShowCallout = YES;
     [annov setPinColor:MKPinAnnotationColorGreen];
     return annov;

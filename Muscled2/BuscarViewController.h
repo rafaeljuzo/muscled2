@@ -10,9 +10,11 @@
 #import <MapKit/MapKit.h>
 #import "PlaceProfileVC.h"
 #import "MyAnnotation.h"
+#import "BuscarManager.h"
 
 @interface BuscarViewController : UIViewController< MKMapViewDelegate,
-                                                    CLLocationManagerDelegate
+                                                    CLLocationManagerDelegate,
+                                                    MKAnnotation
                                                     >
 {
     IBOutlet MKMapView *mapView;

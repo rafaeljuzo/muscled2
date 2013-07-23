@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
 @interface BuscarManager : NSObject
+
+- (NSArray *) getAllStores;
 
 @end
