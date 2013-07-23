@@ -11,8 +11,8 @@
 #import "PlaceProfileVC.h"
 
 @interface BuscarViewController ()
-@property (nonatomic, strong) CLLocation *userLocation;
-@property (nonatomic, strong) NSMutableArray * lojas;
+@property (nonatomic, retain) CLLocation *userLocation;
+@property (nonatomic, retain) NSMutableArray * lojas;
 @end
 
 @implementation BuscarViewController
@@ -23,17 +23,6 @@
 @synthesize userLocation = _userLocation;
 
 #pragma mark - MAPKIT delegate
-
--(void)viewDidDisappear:(BOOL)animated
-{
-    self.lojas = nil;
-    self.placeProfileVC = nil;
-    self.placesTableView = nil;
-    self.mapView = nil;
-    self.placesList = nil;
-    self.userLocation = nil;
-}
-
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>) annotation
 {
     MKPinAnnotationView *annov = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"Current location"];

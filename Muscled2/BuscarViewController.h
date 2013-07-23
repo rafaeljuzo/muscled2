@@ -12,9 +12,7 @@
 #import "MyAnnotation.h"
 
 @interface BuscarViewController : UIViewController< MKMapViewDelegate,
-                                                    CLLocationManagerDelegate,
-                                                    UITableViewDelegate,
-                                                    UITableViewDataSource
+                                                    CLLocationManagerDelegate
                                                     >
 {
     IBOutlet MKMapView *mapView;
