@@ -140,6 +140,7 @@
 		C848B10C179DF2C700D63897 /* ProdutoFotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C848B092179DF2C700D63897 /* ProdutoFotoViewController.m */; };
 		C848B11F179DF2C700D63897 /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = C848B0A6179DF2C700D63897 /* videos.png */; };
 		C848B120179DF2C700D63897 /* videos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C848B0A7179DF2C700D63897 /* videos@2x.png */; };
+		C848B125179E271400D63897 /* LojaRepresentante.m in Sources */ = {isa = PBXBuildFile; fileRef = C848B124179E271400D63897 /* LojaRepresentante.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -424,6 +425,8 @@
 		C848B0A8179DF2C700D63897 /* VideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosViewController.h; sourceTree = "<group>"; };
 		C848B0A9179DF2C700D63897 /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosViewController.m; sourceTree = "<group>"; };
 		C848B0AA179DF2C700D63897 /* VideosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideosViewController.xib; sourceTree = "<group>"; };
+		C848B123179E271400D63897 /* LojaRepresentante.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LojaRepresentante.h; sourceTree = "<group>"; };
+		C848B124179E271400D63897 /* LojaRepresentante.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LojaRepresentante.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -688,6 +691,8 @@
 				C848B020179DF2C600D63897 /* Muscled2 */,
 				C848B01D179DDB7A00D63897 /* BuscarManager.h */,
 				C848B01E179DDB7A00D63897 /* BuscarManager.m */,
+				C848B123179E271400D63897 /* LojaRepresentante.h */,
+				C848B124179E271400D63897 /* LojaRepresentante.m */,
 			);
 			name = Buscar;
 			sourceTree = "<group>";
@@ -1197,6 +1202,7 @@
 				A59D0846154448B8000FFCEE /* CalculaDieta.m in Sources */,
 				C848B01F179DDB7A00D63897 /* BuscarManager.m in Sources */,
 				C848B10C179DF2C700D63897 /* ProdutoFotoViewController.m in Sources */,
+				C848B125179E271400D63897 /* LojaRepresentante.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
