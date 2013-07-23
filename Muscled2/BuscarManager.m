@@ -10,13 +10,19 @@
 
 @implementation BuscarManager
 
+
+- (NSMutableArray *)lojasCadastradas
+{
+    if (!_lojasCadastradas) _lojasCadastradas = [[NSMutableArray alloc]init];
+    return _lojasCadastradas;
+}
+
 - (CLLocationCoordinate2D) getStoreByName:(NSString*)name
 {
     
     CLLocationCoordinate2D coordinate;
     coordinate.latitude = 0;
     coordinate.longitude = 0;
-    
     return coordinate;
 }
 
@@ -46,8 +52,20 @@
                           error:&error];
     //this is what u want =D
     NSArray *results = [json objectForKey:@"results"];
-    for (NSObject * store in results) {
-        NSLog(@"%@", store);
+    LojaRepresentante * loja = [[LojaRepresentante alloc] init];
+    
+    for (NSDictionary *keys in results)
+    {
+        NSString *title = [keys objectForKey:@"title"];
+        //NSDictionary *coordinate = [keys objectForKey:@"coordinate"];
+        NSString *address = [keys objectForKey:@"address"];
+        NSString *phone = [keys objectForKey:@"phone"];
+        
+        loja.nome = title;
+        loja.endereco = address;
+        loja.telefone = phone;
+    
+        
     }
 }
 

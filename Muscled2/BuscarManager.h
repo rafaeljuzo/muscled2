@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import "LojaRepresentante.h"
 
 @interface BuscarManager : NSObject
 
+@property (nonatomic, strong) NSMutableArray *lojasCadastradas;
+
 - (NSArray *) getAllStores;
+
 
 @end
