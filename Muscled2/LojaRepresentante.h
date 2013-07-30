@@ -15,6 +15,8 @@
 @property (nonatomic, strong) NSString *telefone;
 @property (nonatomic, strong) NSString *endereco;
 @property (nonatomic, strong) NSString *coo;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 
 @end

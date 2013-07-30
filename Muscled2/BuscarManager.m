@@ -37,9 +37,7 @@
     if (data)
         [self fetchedDataOfLocation:data];
     
-    
-    NSArray *stores = [[NSArray alloc] init];
-    return stores;
+    return self.lojasCadastradas;
 }
 
 
@@ -57,14 +55,17 @@
     for (NSDictionary *keys in results)
     {
         NSString *title = [keys objectForKey:@"title"];
-        //NSDictionary *coordinate = [keys objectForKey:@"coordinate"];
+        NSString *coordinate = [keys objectForKey:@"coordinate"];
         NSString *address = [keys objectForKey:@"address"];
         NSString *phone = [keys objectForKey:@"phone"];
-        
+        NSArray *coo = [coordinate componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]];
+        loja.latitude = [[coo objectAtIndex:0] doubleValue];
+        loja.longitude = [[coo lastObject] doubleValue];
         loja.nome = title;
         loja.endereco = address;
         loja.telefone = phone;
-    
+
+        [self.lojasCadastradas addObject:loja];
         
     }
 }

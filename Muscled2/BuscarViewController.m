@@ -9,6 +9,7 @@
 #import "BuscarViewController.h"
 #import "MyAnnotation.h"
 #import "PlaceProfileVC.h"
+#import "LojaRepresentante.h"
 
 @interface BuscarViewController ()
 @property (nonatomic, retain) CLLocation *userLocation;
@@ -24,14 +25,17 @@
 
 - (void)viewDidLoad
 {
+    BuscarManager * array = [[BuscarManager alloc]init];
+    [array getAllStores];
+    
+    
+    
 }
 
 
 #pragma mark - MAPKIT delegate
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>) annotation
 {
-    BuscarManager * array = [[BuscarManager alloc]init];
-    [array getAllStores];
     MKPinAnnotationView *annov = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"Current location"];
     annov.animatesDrop = YES;
     annov.canShowCallout = YES;

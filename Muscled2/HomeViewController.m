@@ -14,7 +14,7 @@
 
 - (void) setupView{ 
     pageControlBeingUsed = NO;
-	
+    self.contentScroll.contentSize = CGSizeMake(self.contentScroll.contentSize.width,self.contentScroll.frame.size.height);
     NSString *pathDasImagens = [[NSBundle mainBundle] pathForResource:@"imgensHomeList" ofType:@"plist"];
     self.imageList = [NSArray arrayWithContentsOfFile:pathDasImagens];
     
