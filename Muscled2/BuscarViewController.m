@@ -14,6 +14,7 @@
 @interface BuscarViewController ()
 @property (nonatomic, strong) CLLocation *userLocation;
 @property (nonatomic, strong) NSArray * lojas;
+@property (nonatomic, strong) NSMutableArray * lojaLocation;
 @end
 
 @implementation BuscarViewController
@@ -23,13 +24,23 @@
 @synthesize searchBar = _searchBar;
 @synthesize userLocation = _userLocation;
 
+- (NSMutableArray *)lojaLocation
+{
+    if (!_lojaLocation) _lojaLocation = [[NSMutableArray alloc] init];
+    return _lojaLocation;
+}
+
 - (void)viewDidLoad
 {
     BuscarManager * arrayOfStores = [[BuscarManager alloc] init];
     self.lojas = [arrayOfStores getAllStores];
-    for (LojaRepresentante *loja in self.lojas)
-    [self.mapView addAnnotation:loja];
+    for (LojaRepresentante *loja in self.lojas){
+        [self.mapView addAnnotation:loja];
+    }
+    
 }
+
+
 
 
 #pragma mark - MAPKIT delegate
@@ -53,6 +64,29 @@
     region.span = span;
     region.center = location;
     [self.mapView setRegion:region animated:YES];
+    CLLocation * actualUserLocation = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude
+                                                           longitude:userLocation.coordinate.longitude];
+    
+    
+    for (LojaRepresentante *loja in self.lojas){
+        CLLocation * location = [[CLLocation alloc] initWithLatitude:loja.coordinate.latitude longitude:loja.coordinate.longitude];
+       double distance = [location distanceFromLocation:actualUserLocation];
+        distance = distance/1000;
+        if (distance < 2){
+            UIAlertView *nearStore = [[UIAlertView alloc] initWithTitle:@"Loja perto" message:@"Gostaria de visitar a loja?" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+            
+            [nearStore show];
+//            NSLog(@"loja %f user %f", loja.coordinate.latitude, userLocation.coordinate.latitude);
+//            NSLog(@"%.0fKm %@",distance, loja.title);
+        }
+            
+        
+        
+    }
+    
+    
+    
+    
 }
 
 
