@@ -27,16 +27,8 @@
 {
     BuscarManager * arrayOfStores = [[BuscarManager alloc] init];
     self.lojas = [arrayOfStores getAllStores];
-    
-    for (LojaRepresentante *loja in self.lojas) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.mapView addAnnotation:loja];
-        });
-    }
-    
-    
-    
-    
+    for (LojaRepresentante *loja in self.lojas)
+    [self.mapView addAnnotation:loja];
 }
 
 
