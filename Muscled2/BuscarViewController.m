@@ -12,8 +12,8 @@
 #import "LojaRepresentante.h"
 
 @interface BuscarViewController ()
-@property (nonatomic, retain) CLLocation *userLocation;
-@property (nonatomic, retain) NSMutableArray * lojas;
+@property (nonatomic, strong) CLLocation *userLocation;
+@property (nonatomic, strong) NSArray * lojas;
 @end
 
 @implementation BuscarViewController
@@ -25,8 +25,15 @@
 
 - (void)viewDidLoad
 {
-    BuscarManager * array = [[BuscarManager alloc]init];
-    [array getAllStores];
+    BuscarManager * arrayOfStores = [[BuscarManager alloc] init];
+    self.lojas = [arrayOfStores getAllStores];
+    
+    for (LojaRepresentante *loja in self.lojas) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.mapView addAnnotation:loja];
+        });
+    }
+    
     
     
     

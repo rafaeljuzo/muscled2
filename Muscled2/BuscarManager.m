@@ -59,12 +59,14 @@
         NSString *address = [keys objectForKey:@"address"];
         NSString *phone = [keys objectForKey:@"phone"];
         NSArray *coo = [coordinate componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]];
-        loja.latitude = [[coo objectAtIndex:0] doubleValue];
-        loja.longitude = [[coo lastObject] doubleValue];
+         MKCoordinateRegion lojaRegion = {{ 0.0 , 0.0 } , { 0.0, 0.0 }};
+        lojaRegion.center.latitude = [[coo objectAtIndex:0] doubleValue];
+        lojaRegion.center.longitude = [[coo lastObject] doubleValue];
+        loja.coordinate = lojaRegion.center;
         loja.nome = title;
         loja.endereco = address;
         loja.telefone = phone;
-
+        
         [self.lojasCadastradas addObject:loja];
         
     }
