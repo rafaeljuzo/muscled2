@@ -73,11 +73,13 @@
        double distance = [location distanceFromLocation:actualUserLocation];
         distance = distance/1000;
         if (distance < 2){
-            UIAlertView *nearStore = [[UIAlertView alloc] initWithTitle:@"Loja perto" message:@"Gostaria de visitar a loja?" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+            UIAlertView *nearStore = [[UIAlertView alloc] initWithTitle:@"Loja perto"
+                                                                message:@"Gostaria de visitar a loja?"
+                                                               delegate:nil
+                                                      cancelButtonTitle:nil
+                                                      otherButtonTitles:nil];
             
             [nearStore show];
-//            NSLog(@"loja %f user %f", loja.coordinate.latitude, userLocation.coordinate.latitude);
-//            NSLog(@"%.0fKm %@",distance, loja.title);
         }
             
         
