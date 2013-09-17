@@ -49,7 +49,8 @@
     [controller setSubject:assunto];
     [controller setToRecipients:[NSArray arrayWithObject:@"contato@muscled2.com.br"]];
     [controller setMessageBody:msgView.text isHTML:NO];
-    [self presentModalViewController:controller animated:YES];
+    [self presentViewController:controller animated:YES completion:nil];
+    
 
 }
 
@@ -79,7 +80,7 @@
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
 	[self becomeFirstResponder];
-	[self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
     if (result == MFMailComposeResultSent) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Mensagem" message:@"Obrigado pelo contato. \n Assim que possível retornaremos." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];

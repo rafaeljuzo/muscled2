@@ -38,7 +38,6 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-
 - (void) viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES];
     [super viewDidAppear:animated];
@@ -67,7 +66,7 @@
         case 1:{
             BuscarViewController *buscarVC = [[BuscarViewController alloc] init];
             buscarVC.hidesBottomBarWhenPushed = YES;
-            [[self navigationController] pushViewController:buscarVC animated:YES];
+            [self.navigationController pushViewController:buscarVC animated:YES];
         }
             break;
         case 2:

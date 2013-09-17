@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import "PlaceProfileVC.h"
 #import "MyAnnotation.h"
 #import "BuscarManager.h"
+
 
 @interface BuscarViewController : UIViewController< MKMapViewDelegate,
                                                     CLLocationManagerDelegate,
@@ -19,7 +19,6 @@
 {
     IBOutlet MKMapView *mapView;
     IBOutlet UITableView *placesTableView;
-    IBOutlet PlaceProfileVC *placeProfileVC;
     IBOutlet UISearchBar *searchBar;
     IBOutlet UIBarButtonItem *userCurrentLocationButton;
     
@@ -30,7 +29,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *placesTableView;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
-@property (nonatomic, strong) IBOutlet PlaceProfileVC *placeProfileVC;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSMutableArray *placesList;
 

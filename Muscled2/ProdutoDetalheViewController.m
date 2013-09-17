@@ -221,21 +221,6 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
     [self configureView];
 }
 
-- (void)viewDidUnload{
-    self.imgTabelaNutricional = nil;
-    self.flipIndicatorButton = nil;
-    self.textoDaDescricao = nil;
-    self.imgFotoDoProduto = nil;
-    self.imagemDoProdutoImageView = nil;
-    self.tblCompImageView = nil;
-    self.tblCompView = nil;
-    self.viewPrincipal = nil;
-    self.descricaoTextView = nil;
-    self.tblCompScrollView = nil;
-    self.fotoTextoScrollView = nil;
-    self.comparativoButton = nil;
-    [super viewDidUnload];
-}
 
 - (void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;

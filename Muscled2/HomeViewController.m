@@ -14,7 +14,7 @@
 
 - (void) setupView{ 
     pageControlBeingUsed = NO;
-    self.contentScroll.contentSize = CGSizeMake(self.contentScroll.contentSize.width,self.contentScroll.frame.size.height);
+    [self.view setBackgroundColor:[UIColor blackColor]];
     NSString *pathDasImagens = [[NSBundle mainBundle] pathForResource:@"imgensHomeList" ofType:@"plist"];
     self.imageList = [NSArray arrayWithContentsOfFile:pathDasImagens];
     
@@ -60,6 +60,11 @@
 		int page = floor((self.contentScroll.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
 		self.contentPage.currentPage = page;
 	}
+    
+    [sender setContentOffset: CGPointMake(sender.contentOffset.x, 0)];
+        // or if you are sure you wanna it always on top:
+        // [aScrollView setContentOffset: CGPointMake(aScrollView.contentOffset.x, 0)];
+
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
@@ -105,6 +110,7 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+
 #pragma mark - IBActions
 
 - (IBAction)changePage{
@@ -114,7 +120,6 @@
 	frame.origin.y = 0;
 	frame.size = self.contentScroll.frame.size;
 	[self.contentScroll scrollRectToVisible:frame animated:YES];
-
 	pageControlBeingUsed = YES;
 }
 
@@ -127,14 +132,6 @@
     self.popOverViewController.view.frame = CGRectMake(23.0f+(self.contentPage.currentPage*320), 70.0f, 275.0f, 270.0f); //notice this is ON screen!
     [self.contentScroll addSubview:self.popOverViewController.view];
     [UIView commitAnimations];
-    
-//    UIPopoverController *pop = [[UIPopoverController alloc] initWithContentViewController:self.popOverViewController];
-//    [pop setDelegate:self];
-//    [pop setPopoverContentSize:CGSizeMake(275, 220)];
-//    [pop presentPopoverFromRect:CGRectMake(30, 70, 276, 180) inView:self.view
-//       permittedArrowDirections:0 animated:YES];
-    
-//    self.contentTextView.text = [NSString stringWithFormat:@"%@", [self.contentList objectAtIndex:self.contentPage.currentPage]];
     
 }
 

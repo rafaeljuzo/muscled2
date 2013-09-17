@@ -55,7 +55,7 @@
         LojaRepresentante * loja = [[LojaRepresentante alloc] init];
         NSString *title = [keys objectForKey:@"title"];
         NSString *coordinate = [keys objectForKey:@"coordinate"];
-//        NSString *address = [keys objectForKey:@"address"];
+        NSString *address = [keys objectForKey:@"address"];
         NSString *phone = [keys objectForKey:@"phone"];
         NSArray *coo = [coordinate componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]];
          MKCoordinateRegion lojaRegion = {{ 0.0 , 0.0 } , { 0.0, 0.0 }};
@@ -63,7 +63,7 @@
         lojaRegion.center.longitude = [[coo lastObject] doubleValue];
         loja.coordinate = lojaRegion.center;
         loja.title = title;
-//        loja.endereco = address;
+        loja.endereco = address;
         loja.telefone = phone;
         
         [self.lojasCadastradas addObject:loja];

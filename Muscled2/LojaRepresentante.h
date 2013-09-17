@@ -9,18 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@interface LojaRepresentante : NSObject <MKAnnotation> {
-    
-	CLLocationCoordinate2D coordinate;
-    CLLocationDistance radius;
-    CLLocationManager *location;
-	NSString *title;
-	NSString *telefone;
-}
+@interface LojaRepresentante : NSObject <MKAnnotation>
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *telefone;
-//@property (nonatomic, strong) NSString *endereco;
+@property (nonatomic, strong) NSString *endereco;
 @property (nonatomic) double latitude;
 @property (nonatomic) double longitude;
 @property (nonatomic) CLLocationDistance radius;
