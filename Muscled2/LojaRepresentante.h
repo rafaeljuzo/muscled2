@@ -18,5 +18,5 @@
 @property (nonatomic) double longitude;
 @property (nonatomic) CLLocationDistance radius;
 @property (nonatomic) CLLocationCoordinate2D coordinate;
-
+@property (nonatomic) double distance;
 @end

@@ -28,6 +28,7 @@
         UIImageView *tempImageView = [[UIImageView alloc] initWithFrame:frame];
         tempImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",[self.imageList objectAtIndex:i]]];
         [self.contentScroll addSubview:tempImageView];
+        
 
 	}
 
@@ -36,6 +37,7 @@
 	self.contentPage.currentPage = 0;
 	self.contentPage.numberOfPages = self.imageList.count;
 }
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

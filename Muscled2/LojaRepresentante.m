@@ -10,7 +10,7 @@
 
 @implementation LojaRepresentante
 
-@synthesize title = _title, telefone = _telefone, endereco = _endereco, radius = _radius, coordinate = _coordinate;
+@synthesize title = _title, telefone = _telefone, endereco = _endereco, radius = _radius, coordinate = _coordinate, distance=_distance;
 
 
 

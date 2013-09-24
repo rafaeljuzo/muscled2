@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BuscarManager.h"
 
 @interface HomeViewController : UIViewController <UIScrollViewDelegate, UIPopoverControllerDelegate>{
     int pageNumber;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A84A82827344EF8EF9AA66 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5BF28AA67840B99AF702EF /* libPods.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		0E0A306715A323DD0004E624 /* icMasculino@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0A306615A323DD0004E624 /* icMasculino@2x.png */; };
 		0E0A306A15A324750004E624 /* icFeminino@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0A306915A324750004E624 /* icFeminino@2x.png */; };
 		0E0E142715583A360026626C /* layout_dieta.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E142615583A360026626C /* layout_dieta.png */; };
@@ -117,7 +118,6 @@
 		11DF2C2F14A53C9100BAC2BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DF2C2E14A53C9100BAC2BF /* UIKit.framework */; };
 		11DF2C3114A53C9100BAC2BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DF2C3014A53C9100BAC2BF /* Foundation.framework */; };
 		11DF2C3314A53C9100BAC2BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DF2C3214A53C9100BAC2BF /* CoreGraphics.framework */; };
-		11DF2C3914A53C9100BAC2BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11DF2C3714A53C9100BAC2BF /* InfoPlist.strings */; };
 		11DF2C3B14A53C9100BAC2BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF2C3A14A53C9100BAC2BF /* main.m */; };
 		11DF2C3F14A53C9100BAC2BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF2C3E14A53C9100BAC2BF /* AppDelegate.m */; };
 		11DF2C4214A53C9100BAC2BF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF2C4114A53C9100BAC2BF /* HomeViewController.m */; };
@@ -130,6 +130,8 @@
 		A59D084215444883000FFCEE /* DietaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59D084015444883000FFCEE /* DietaViewController.m */; };
 		A59D084315444883000FFCEE /* DietaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59D084115444883000FFCEE /* DietaViewController.xib */; };
 		A59D0846154448B8000FFCEE /* CalculaDieta.m in Sources */ = {isa = PBXBuildFile; fileRef = A59D0845154448B8000FFCEE /* CalculaDieta.m */; };
+		C846282A17E8D4F500519777 /* BuscarListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C846282817E8D4F500519777 /* BuscarListViewController.m */; };
+		C846282B17E8D4F500519777 /* BuscarListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C846282917E8D4F500519777 /* BuscarListViewController.xib */; };
 		C848B01F179DDB7A00D63897 /* BuscarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C848B01E179DDB7A00D63897 /* BuscarManager.m */; };
 		C848B0CA179DF2C700D63897 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C848B046179DF2C600D63897 /* HomeViewController.xib */; };
 		C848B0CB179DF2C700D63897 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C848B048179DF2C600D63897 /* InfoPlist.strings */; };
@@ -143,6 +145,9 @@
 		C8635BF917C455C400B2F6F1 /* LojaPerfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8635BF717C455C400B2F6F1 /* LojaPerfilViewController.m */; };
 		C8635BFA17C455C400B2F6F1 /* LojaPerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8635BF817C455C400B2F6F1 /* LojaPerfilViewController.xib */; };
 		C8635BFC17C45C1300B2F6F1 /* mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = C8635BFB17C45C1300B2F6F1 /* mapa.png */; };
+		C899F48A17F151BE00CC5F07 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C899F48917F151BE00CC5F07 /* MobileCoreServices.framework */; };
+
+		C8F7AB5017EB46F200881FFF /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C8F7AB4F17EB46F200881FFF /* Location.gpx */; };
 		C8FBC5C717C5A0D100BDC2D0 /* fullMusclemeal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8FBC5C617C5A0D100BDC2D0 /* fullMusclemeal@2x.png */; };
 		C8FBC5C917C5A0EF00BDC2D0 /* Musclemeal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8FBC5C817C5A0EF00BDC2D0 /* Musclemeal@2x.png */; };
 		C8FBC5CB17C5A1A600BDC2D0 /* Musclelipo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8FBC5CA17C5A1A600BDC2D0 /* Musclelipo@2x.png */; };
@@ -272,7 +277,6 @@
 		11DF2C3014A53C9100BAC2BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11DF2C3214A53C9100BAC2BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		11DF2C3614A53C9100BAC2BF /* Muscled2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Muscled2-Info.plist"; sourceTree = "<group>"; };
-		11DF2C3814A53C9100BAC2BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11DF2C3A14A53C9100BAC2BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11DF2C3C14A53C9100BAC2BF /* Muscled2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Muscled2-Prefix.pch"; sourceTree = "<group>"; };
 		11DF2C3D14A53C9100BAC2BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -287,11 +291,16 @@
 		11DF2C9E14A5422700BAC2BF /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosViewController.m; sourceTree = "<group>"; };
 		11DF2C9F14A5422700BAC2BF /* VideosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideosViewController.xib; sourceTree = "<group>"; };
 		11E8F4EB14B51EE200E3C77C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		793FE02B536547BF91A4A972 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A59D083F15444883000FFCEE /* DietaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietaViewController.h; sourceTree = "<group>"; };
 		A59D084015444883000FFCEE /* DietaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietaViewController.m; sourceTree = "<group>"; };
 		A59D084115444883000FFCEE /* DietaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietaViewController.xib; sourceTree = "<group>"; };
 		A59D0844154448B8000FFCEE /* CalculaDieta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculaDieta.h; sourceTree = "<group>"; };
 		A59D0845154448B8000FFCEE /* CalculaDieta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculaDieta.m; sourceTree = "<group>"; };
+		BA5BF28AA67840B99AF702EF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C846282717E8D4F500519777 /* BuscarListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuscarListViewController.h; sourceTree = "<group>"; };
+		C846282817E8D4F500519777 /* BuscarListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuscarListViewController.m; sourceTree = "<group>"; };
+		C846282917E8D4F500519777 /* BuscarListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuscarListViewController.xib; sourceTree = "<group>"; };
 		C848B01D179DDB7A00D63897 /* BuscarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuscarManager.h; sourceTree = "<group>"; };
 		C848B01E179DDB7A00D63897 /* BuscarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuscarManager.m; sourceTree = "<group>"; };
 		C848B021179DF2C600D63897 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -436,6 +445,10 @@
 		C8635BF717C455C400B2F6F1 /* LojaPerfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LojaPerfilViewController.m; sourceTree = "<group>"; };
 		C8635BF817C455C400B2F6F1 /* LojaPerfilViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LojaPerfilViewController.xib; sourceTree = "<group>"; };
 		C8635BFB17C45C1300B2F6F1 /* mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa.png; sourceTree = "<group>"; };
+		C899F48917F151BE00CC5F07 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C899F48F17F165F400CC5F07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		C8F7AB4E17EB464A00881FFF /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		C8F7AB4F17EB46F200881FFF /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Location.gpx; path = Muscled2/Location.gpx; sourceTree = "<group>"; };
 		C8FBC5C617C5A0D100BDC2D0 /* fullMusclemeal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullMusclemeal@2x.png"; sourceTree = "<group>"; };
 		C8FBC5C817C5A0EF00BDC2D0 /* Musclemeal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Musclemeal@2x.png"; sourceTree = "<group>"; };
 		C8FBC5CA17C5A1A600BDC2D0 /* Musclelipo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Musclelipo@2x.png"; sourceTree = "<group>"; };
@@ -448,6 +461,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C899F48A17F151BE00CC5F07 /* MobileCoreServices.framework in Frameworks */,
 				11E8F4EC14B51EE200E3C77C /* QuartzCore.framework in Frameworks */,
 				0E93F16814ACD0420051B151 /* MessageUI.framework in Frameworks */,
 				0E9F6A0014AB7834003BB7FF /* CoreData.framework in Frameworks */,
@@ -457,6 +471,7 @@
 				11DF2C2F14A53C9100BAC2BF /* UIKit.framework in Frameworks */,
 				11DF2C3114A53C9100BAC2BF /* Foundation.framework in Frameworks */,
 				11DF2C3314A53C9100BAC2BF /* CoreGraphics.framework in Frameworks */,
+				01A84A82827344EF8EF9AA66 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +565,7 @@
 			isa = PBXGroup;
 			children = (
 				11647D1A14A56FA500067E77 /* BuscarViewController.xib */,
+				C846282917E8D4F500519777 /* BuscarListViewController.xib */,
 			);
 			name = Buscar;
 			sourceTree = "<group>";
@@ -702,8 +718,11 @@
 		11C0F1D514A6060900A933F8 /* Buscar */ = {
 			isa = PBXGroup;
 			children = (
+				C846282717E8D4F500519777 /* BuscarListViewController.h */,
+				C846282817E8D4F500519777 /* BuscarListViewController.m */,
 				11647D1814A56FA500067E77 /* BuscarViewController.h */,
 				11647D1914A56FA500067E77 /* BuscarViewController.m */,
+				C8F7AB4E17EB464A00881FFF /* Location.gpx */,
 				C8635BF617C455C400B2F6F1 /* LojaPerfilViewController.h */,
 				C8635BF717C455C400B2F6F1 /* LojaPerfilViewController.m */,
 				0ECA924214AA3D1D00164C8D /* MyAnnotation.h */,
@@ -780,10 +799,13 @@
 		11DF2C1F14A53C9100BAC2BF = {
 			isa = PBXGroup;
 			children = (
+				C899F48917F151BE00CC5F07 /* MobileCoreServices.framework */,
+				C8F7AB4F17EB46F200881FFF /* Location.gpx */,
 				C8FBC5CE17C5C42600BDC2D0 /* Default-568h@2x.png */,
 				11DF2C3414A53C9100BAC2BF /* Muscled2 */,
 				11DF2C2D14A53C9100BAC2BF /* Frameworks */,
 				11DF2C2B14A53C9100BAC2BF /* Products */,
+				793FE02B536547BF91A4A972 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -807,6 +829,7 @@
 				11B032CA14A9056C005D81CA /* MediaPlayer.framework */,
 				0E93F16714ACD0420051B151 /* MessageUI.framework */,
 				11DF2C2E14A53C9100BAC2BF /* UIKit.framework */,
+				BA5BF28AA67840B99AF702EF /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -826,8 +849,8 @@
 			isa = PBXGroup;
 			children = (
 				11DF2C3614A53C9100BAC2BF /* Muscled2-Info.plist */,
-				11DF2C3714A53C9100BAC2BF /* InfoPlist.strings */,
 				11DF2C3A14A53C9100BAC2BF /* main.m */,
+				C899F48F17F165F400CC5F07 /* InfoPlist.strings */,
 				11DF2C3C14A53C9100BAC2BF /* Muscled2-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -1046,9 +1069,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11DF2C5614A53C9100BAC2BF /* Build configuration list for PBXNativeTarget "Muscled2" */;
 			buildPhases = (
+				31D0C8DF080A4F88B4729FDE /* Check Pods Manifest.lock */,
 				11DF2C2614A53C9100BAC2BF /* Sources */,
 				11DF2C2714A53C9100BAC2BF /* Frameworks */,
 				11DF2C2814A53C9100BAC2BF /* Resources */,
+				1DE2C3EF33D74B9F9663271B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1089,7 +1114,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11DF2C3914A53C9100BAC2BF /* InfoPlist.strings in Resources */,
 				11DF2C5014A53C9100BAC2BF /* HomeViewController.xib in Resources */,
 				11DF2C5314A53C9100BAC2BF /* ProdutosViewController.xib in Resources */,
 				11DF2CA114A5422700BAC2BF /* VideosViewController.xib in Resources */,
@@ -1205,10 +1229,46 @@
 				C8FBC5CB17C5A1A600BDC2D0 /* Musclelipo@2x.png in Resources */,
 				C8FBC5CD17C5A1BB00BDC2D0 /* fullMusclelipo@2x.png in Resources */,
 				C8FBC5CF17C5C42600BDC2D0 /* Default-568h@2x.png in Resources */,
+				C846282B17E8D4F500519777 /* BuscarListViewController.xib in Resources */,
+				C8F7AB5017EB46F200881FFF /* Location.gpx in Resources */,
+				C899F49017F165F400CC5F07 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DE2C3EF33D74B9F9663271B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31D0C8DF080A4F88B4729FDE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11DF2C2614A53C9100BAC2BF /* Sources */ = {
@@ -1231,20 +1291,13 @@
 				C848B10C179DF2C700D63897 /* ProdutoFotoViewController.m in Sources */,
 				C848B125179E271400D63897 /* LojaRepresentante.m in Sources */,
 				C8635BF917C455C400B2F6F1 /* LojaPerfilViewController.m in Sources */,
+				C846282A17E8D4F500519777 /* BuscarListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11DF2C3714A53C9100BAC2BF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11DF2C3814A53C9100BAC2BF /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		11DF2C4E14A53C9100BAC2BF /* HomeViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1321,6 +1374,7 @@
 		};
 		0EEE464514C09892008D2230 /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793FE02B536547BF91A4A972 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					armv6,
@@ -1329,10 +1383,6 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Muscled2/Muscled2-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -1413,6 +1463,7 @@
 		};
 		11DF2C5714A53C9100BAC2BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793FE02B536547BF91A4A972 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					armv6,
@@ -1421,10 +1472,6 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Muscled2/Muscled2-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -1440,6 +1487,7 @@
 		};
 		11DF2C5814A53C9100BAC2BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793FE02B536547BF91A4A972 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					armv6,
@@ -1448,10 +1496,6 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Muscled2/Muscled2-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
