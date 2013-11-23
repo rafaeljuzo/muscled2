@@ -21,8 +21,7 @@
 @implementation BuscarViewController
 
 @synthesize lojas;
-@synthesize placesTableView, mapView, locationManager, placesList;
-@synthesize searchBar = _searchBar;
+@synthesize mapView, locationManager, placesList;
 @synthesize userLocation = _userLocation;
 
 - (void)awakeFromNib {
@@ -171,27 +170,32 @@
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>) annotation
 {
     
-    if ([annotation isKindOfClass:[MKUserLocation class]])
-        return nil;
-    static NSString* AnnotationIdentifier = @"AnnotationIdentifier";
-    MKAnnotationView *annotationView = [self.mapView dequeueReusableAnnotationViewWithIdentifier:AnnotationIdentifier];
-    if(annotationView)
-        return annotationView;
-    else
+    MKAnnotationView *userAnnotationView = nil;
+    if ([annotation isKindOfClass:MKUserLocation.class])
     {
-        MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation
-                                                                         reuseIdentifier:AnnotationIdentifier];
+        userAnnotationView = (MKAnnotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:@"UserLocation"];
+        if (userAnnotationView == nil)  {
+            userAnnotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"UserLocation"];
+        }
+        else
+            userAnnotationView.annotation = annotation;
+
         
-        annotationView.canShowCallout = YES;
-        annotationView.image = [UIImage imageNamed:@"ann_store"];
-        UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        [rightButton setTitle:annotation.title forState:UIControlStateNormal];
-        [annotationView setRightCalloutAccessoryView:rightButton];
-        annotationView.canShowCallout = YES;
-        annotationView.draggable = YES;
-        return annotationView;
+        userAnnotationView.enabled = YES;
+        userAnnotationView.canShowCallout = YES;
+        userAnnotationView.image = [UIImage imageNamed:@"map_pin.png"];
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0,0,141,108)];
+        view.backgroundColor = [UIColor clearColor];
+        UIImageView *imgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"toltip.png"]];
+        [view addSubview:imgView];
+        userAnnotationView.leftCalloutAccessoryView = view;
+        
+        
+        
+        
+        return userAnnotationView;
     }
-    return nil;
+    return  nil;
 }
 
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control

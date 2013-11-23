@@ -134,7 +134,6 @@
 		C846282B17E8D4F500519777 /* BuscarListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C846282917E8D4F500519777 /* BuscarListViewController.xib */; };
 		C848B01F179DDB7A00D63897 /* BuscarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C848B01E179DDB7A00D63897 /* BuscarManager.m */; };
 		C848B0CA179DF2C700D63897 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C848B046179DF2C600D63897 /* HomeViewController.xib */; };
-		C848B0CB179DF2C700D63897 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C848B048179DF2C600D63897 /* InfoPlist.strings */; };
 		C848B0CC179DF2C700D63897 /* ProdutosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C848B04A179DF2C700D63897 /* ProdutosViewController.xib */; };
 		C848B10C179DF2C700D63897 /* ProdutoFotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C848B092179DF2C700D63897 /* ProdutoFotoViewController.m */; };
 		C848B11F179DF2C700D63897 /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = C848B0A6179DF2C700D63897 /* videos.png */; };
@@ -146,7 +145,6 @@
 		C8635BFA17C455C400B2F6F1 /* LojaPerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8635BF817C455C400B2F6F1 /* LojaPerfilViewController.xib */; };
 		C8635BFC17C45C1300B2F6F1 /* mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = C8635BFB17C45C1300B2F6F1 /* mapa.png */; };
 		C899F48A17F151BE00CC5F07 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C899F48917F151BE00CC5F07 /* MobileCoreServices.framework */; };
-
 		C8F7AB5017EB46F200881FFF /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C8F7AB4F17EB46F200881FFF /* Location.gpx */; };
 		C8FBC5C717C5A0D100BDC2D0 /* fullMusclemeal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8FBC5C617C5A0D100BDC2D0 /* fullMusclemeal@2x.png */; };
 		C8FBC5C917C5A0EF00BDC2D0 /* Musclemeal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8FBC5C817C5A0EF00BDC2D0 /* Musclemeal@2x.png */; };
@@ -341,7 +339,6 @@
 		C848B044179DF2C600D63897 /* empresa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empresa.png; sourceTree = "<group>"; };
 		C848B045179DF2C600D63897 /* empresa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empresa@2x.png"; sourceTree = "<group>"; };
 		C848B047179DF2C600D63897 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HomeViewController.xib; sourceTree = "<group>"; };
-		C848B049179DF2C600D63897 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C848B04B179DF2C700D63897 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ProdutosViewController.xib; sourceTree = "<group>"; };
 		C848B04C179DF2C700D63897 /* fotoLoja1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fotoLoja1@2x.png"; sourceTree = "<group>"; };
 		C848B04D179DF2C700D63897 /* fullBCAA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullBCAA@2x.png"; sourceTree = "<group>"; };
@@ -954,7 +951,6 @@
 				C848B044179DF2C600D63897 /* empresa.png */,
 				C848B045179DF2C600D63897 /* empresa@2x.png */,
 				C848B046179DF2C600D63897 /* HomeViewController.xib */,
-				C848B048179DF2C600D63897 /* InfoPlist.strings */,
 				C848B04A179DF2C700D63897 /* ProdutosViewController.xib */,
 				C848B04C179DF2C700D63897 /* fotoLoja1@2x.png */,
 				C848B04D179DF2C700D63897 /* fullBCAA@2x.png */,
@@ -1216,7 +1212,6 @@
 				0E966C1B15ACAFE20025C9CB /* icMusclelipo@2x.png in Resources */,
 				0E966C1C15ACAFE20025C9CB /* icMusclemeal@2x.png in Resources */,
 				C848B0CA179DF2C700D63897 /* HomeViewController.xib in Resources */,
-				C848B0CB179DF2C700D63897 /* InfoPlist.strings in Resources */,
 				C848B0CC179DF2C700D63897 /* ProdutosViewController.xib in Resources */,
 				C848B11F179DF2C700D63897 /* videos.png in Resources */,
 				C848B120179DF2C700D63897 /* videos@2x.png in Resources */,
@@ -1231,7 +1226,6 @@
 				C8FBC5CF17C5C42600BDC2D0 /* Default-568h@2x.png in Resources */,
 				C846282B17E8D4F500519777 /* BuscarListViewController.xib in Resources */,
 				C8F7AB5017EB46F200881FFF /* Location.gpx in Resources */,
-				C899F49017F165F400CC5F07 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1320,14 +1314,6 @@
 				C848B047179DF2C600D63897 /* en */,
 			);
 			name = HomeViewController.xib;
-			sourceTree = "<group>";
-		};
-		C848B048179DF2C600D63897 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C848B049179DF2C600D63897 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		C848B04A179DF2C700D63897 /* ProdutosViewController.xib */ = {

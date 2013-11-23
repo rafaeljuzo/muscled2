@@ -11,7 +11,7 @@
 
 @interface LojaRepresentante : NSObject <MKAnnotation>
 
-@property (nonatomic, strong) NSString *title;
+@property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) NSString *telefone;
 @property (nonatomic, strong) NSString *endereco;
 @property (nonatomic) double latitude;

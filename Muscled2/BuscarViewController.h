@@ -18,17 +18,13 @@
                                                     >
 {
     IBOutlet MKMapView *mapView;
-    IBOutlet UITableView *placesTableView;
-    IBOutlet UISearchBar *searchBar;
     IBOutlet UIBarButtonItem *userCurrentLocationButton;
     
     CLLocationManager *locationManager;
     NSMutableArray *placesList;
 }
 
-@property (strong, nonatomic) IBOutlet UITableView *placesTableView;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
-@property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSMutableArray *placesList;
 
