@@ -23,6 +23,8 @@
 @synthesize lojas;
 @synthesize mapView, locationManager, placesList;
 @synthesize userLocation = _userLocation;
+@synthesize title, subtitle;
+
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -167,36 +169,44 @@
 
 
 #pragma mark - MAPKIT delegate
-- (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>) annotation
-{
+- (MKAnnotationView *)mapView:(MKMapView *)sender viewForAnnotation:(id <MKAnnotation>)annotation {
     
-    MKAnnotationView *userAnnotationView = nil;
-    if ([annotation isKindOfClass:MKUserLocation.class])
-    {
-        userAnnotationView = (MKAnnotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:@"UserLocation"];
-        if (userAnnotationView == nil)  {
-            userAnnotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"UserLocation"];
-        }
-        else
-            userAnnotationView.annotation = annotation;
-
-        
-        userAnnotationView.enabled = YES;
-        userAnnotationView.canShowCallout = YES;
-        userAnnotationView.image = [UIImage imageNamed:@"map_pin.png"];
-        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0,0,141,108)];
-        view.backgroundColor = [UIColor clearColor];
-        UIImageView *imgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"toltip.png"]];
-        [view addSubview:imgView];
-        userAnnotationView.leftCalloutAccessoryView = view;
-        
-        
-        
-        
-        return userAnnotationView;
+    static NSString *identifier = @"MyLocation";
+    
+    MKPinAnnotationView *annotationView =
+    (MKPinAnnotationView *)[sender dequeueReusableAnnotationViewWithIdentifier:identifier];
+    
+    if (annotationView == nil) {
+        annotationView = [[MKPinAnnotationView alloc]
+                          initWithAnnotation:annotation
+                          reuseIdentifier:identifier];
+    } else {
+        annotationView.annotation = annotation;
     }
-    return  nil;
+    
+    annotationView.enabled = YES;
+    annotationView.canShowCallout = YES;
+    
+    // Create a UIButton object to add on the
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    [rightButton setTitle:annotation.title forState:UIControlStateHighlighted];
+    [annotationView setRightCalloutAccessoryView:rightButton];
+    
+    return annotationView;
 }
+
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+    view.enabled = YES;
+    view.canShowCallout = YES;
+    view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    view.userInteractionEnabled = NO;
+
+}
+
+
+
 
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
@@ -204,6 +214,7 @@
     LojaPerfilViewController * lojaPerfilVC = [[LojaPerfilViewController alloc] init];
     lojaPerfilVC.loja = loja;
     [self.navigationController pushViewController:lojaPerfilVC animated:YES];
+    NSLog(@"clicou a loja %@", loja.title);
     
 }
 
@@ -222,7 +233,6 @@
     
 }
 
-
 #pragma mark - CLUserLocation 
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
@@ -231,8 +241,20 @@
 
 
 
+
 #pragma mark View Delegate
 - (IBAction)trocaMapaLista:(id)sender{
+    
+}
+
+- (void) createAlertViewWithMessage:(NSString* ) message{
+    
+    UIAlertView * alert = [[UIAlertView alloc ]initWithTitle:@"teste"
+                                                     message:message
+                                                    delegate:nil
+                                           cancelButtonTitle:@"Descartar"
+                                           otherButtonTitles:nil, nil];
+    [alert show];
     
 }
 
