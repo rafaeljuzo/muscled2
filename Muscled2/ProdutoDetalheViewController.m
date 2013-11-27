@@ -33,63 +33,92 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
 }
 
 - (void)configureView{
-    self.hidesBottomBarWhenPushed = YES;
     
-    imgFotoDoProduto = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", nomeDoProduto]];
-    imgTabelaNutricional = [UIImage imageNamed:[NSString stringWithFormat:@"tbl%@@2x.png", nomeDoProduto]];
+    NSString * imgName = [NSString stringWithFormat:@"%@.png", nomeDoProduto];
+    UIImageView *productImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imgName]];
+    [self.fotoTextoScrollView addSubview:productImage];
+    
+    UITextView * txtView = [[UITextView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + productImage.frame.size.height, self.view.frame.size.width, 400.0f)];
+    txtView.text = textoDaDescricao;
+    txtView.textColor = [UIColor whiteColor];
+    txtView.backgroundColor = [UIColor blackColor];
+    [self.fotoTextoScrollView addSubview:txtView];
+    txtView.editable = NO;
+    
+    UIButton * compareBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, productImage.frame.size.height + txtView.frame.size.height, 300, 50)];
+    
+    compareBtn.titleLabel.text = @"Compare";
     imgComparativo = [UIImage imageNamed:[NSString stringWithFormat:@"cmp%@@2x.png", nomeDoProduto]];
+    compareBtn.backgroundColor = [UIColor whiteColor];
+    compareBtn.titleLabel.textColor = [UIColor blueColor];
+    [compareBtn addTarget:self action:@selector(flipViewAtual:) forControlEvents:(UIControlEventTouchDown)];
     
-    self.descricaoTextView.text =  textoDaDescricao;
-    viewPricipalVisivel = YES;
-    
-    self.imagemDoProdutoImageView.image = imgFotoDoProduto;
-    self.tblCompImageView.image = imgTabelaNutricional;
-    
-    self.imagemDoProdutoImageView.userInteractionEnabled = YES;
-    self.tblCompImageView.userInteractionEnabled = YES;
-    
-    self.imagemDoProdutoImageView.tag = 0;
-    self.tblCompImageView.tag = 1;
-    self.descricaoTextView.font = [UIFont fontWithName:@"HelveticaNeue" size:14.0];
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchesBegan:)];
-    
-    singleTap.cancelsTouchesInView = NO; 
-    [self.imagemDoProdutoImageView addGestureRecognizer:singleTap];   
-    
-    UIButton *localFlipIndicator =[[UIButton alloc] initWithFrame:CGRectMake(0,0,30,30)];
-	self.flipIndicatorButton=localFlipIndicator;
-
-	[self.flipIndicatorButton setBackgroundImage:[UIImage imageNamed:@"tblIcon.png"] forState:UIControlStateNormal];
-    
-	UIBarButtonItem *flipButtonBarItem;
-	flipButtonBarItem = [[UIBarButtonItem alloc] initWithCustomView:self.flipIndicatorButton];
-	
-    [self.navigationItem setRightBarButtonItem:flipButtonBarItem animated:YES];
-    
-    
-	[self.flipIndicatorButton addTarget:self action:@selector(flipViewAtual) forControlEvents:(UIControlEventTouchUpInside)];
-    
-    self.descricaoTextView.frame = CGRectMake(0, 305, 320, self.descricaoTextView.contentSize.height);
-    
-    CGFloat frameHeight = self.imagemDoProdutoImageView.frame.size.height + self.descricaoTextView.contentSize.height;
-    self.fotoTextoScrollView.contentSize = CGSizeMake(320, frameHeight + 45);
-    
-    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
-    UITapGestureRecognizer *twoFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTwoFingerTap:)];
-    
-    
-    [doubleTap setNumberOfTapsRequired:2];
-    [twoFingerTap setNumberOfTouchesRequired:2];
-    
-    self.tblCompImageView.gestureRecognizers = [NSArray arrayWithObjects:doubleTap, twoFingerTap, nil];
-    
-    
-    if (self.imgComparativo != NULL) {   
-        CGRect buttonFrame = self.comparativoButton.frame;
-        buttonFrame.origin.y = frameHeight;
-        self.comparativoButton.frame = buttonFrame;
-        [self.comparativoButton setHidden:NO];
+    if (self.imgComparativo) {
+        [self.fotoTextoScrollView addSubview: compareBtn];
     }
+    
+    
+    self.fotoTextoScrollView.contentSize = CGSizeMake(self.view.frame.size.width, productImage.frame.size.height + txtView.frame.size.height + compareBtn.frame.size.height);
+    
+    
+    
+//    self.hidesBottomBarWhenPushed = YES;
+//    
+//    imgFotoDoProduto = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", nomeDoProduto]];
+//    imgTabelaNutricional = [UIImage imageNamed:[NSString stringWithFormat:@"tbl%@@2x.png", nomeDoProduto]];
+//    imgComparativo = [UIImage imageNamed:[NSString stringWithFormat:@"cmp%@@2x.png", nomeDoProduto]];
+//    
+//    self.descricaoTextView.text =  textoDaDescricao;
+//    viewPricipalVisivel = YES;
+//    
+//    self.imagemDoProdutoImageView.image = imgFotoDoProduto;
+//    self.tblCompImageView.image = imgTabelaNutricional;
+//    
+//    self.imagemDoProdutoImageView.userInteractionEnabled = YES;
+//    self.tblCompImageView.userInteractionEnabled = YES;
+//    
+//    self.imagemDoProdutoImageView.tag = 0;
+//    self.tblCompImageView.tag = 1;
+//    self.descricaoTextView.font = [UIFont fontWithName:@"HelveticaNeue" size:14.0];
+//    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchesBegan:)];
+//    
+//    singleTap.cancelsTouchesInView = NO; 
+//    [self.imagemDoProdutoImageView addGestureRecognizer:singleTap];   
+//    
+//    UIButton *localFlipIndicator =[[UIButton alloc] initWithFrame:CGRectMake(0,0,30,30)];
+//	self.flipIndicatorButton=localFlipIndicator;
+//
+//	[self.flipIndicatorButton setBackgroundImage:[UIImage imageNamed:@"tblIcon.png"] forState:UIControlStateNormal];
+//    
+//	UIBarButtonItem *flipButtonBarItem;
+//	flipButtonBarItem = [[UIBarButtonItem alloc] initWithCustomView:self.flipIndicatorButton];
+//	
+//    [self.navigationItem setRightBarButtonItem:flipButtonBarItem animated:YES];
+//    
+//    
+//	[self.flipIndicatorButton addTarget:self action:@selector(flipViewAtual) forControlEvents:(UIControlEventTouchUpInside)];
+//    
+//    self.descricaoTextView.frame = CGRectMake(0, 305, 320, self.descricaoTextView.contentSize.height);
+//    
+//    CGFloat frameHeight = self.imagemDoProdutoImageView.frame.size.height + self.descricaoTextView.contentSize.height;
+//    self.fotoTextoScrollView.contentSize = CGSizeMake(320, frameHeight + 45);
+//    
+//    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
+//    UITapGestureRecognizer *twoFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTwoFingerTap:)];
+//    
+//    
+//    [doubleTap setNumberOfTapsRequired:2];
+//    [twoFingerTap setNumberOfTouchesRequired:2];
+//    
+//    self.tblCompImageView.gestureRecognizers = [NSArray arrayWithObjects:doubleTap, twoFingerTap, nil];
+//    
+//    
+//    if (self.imgComparativo != NULL) {   
+//        CGRect buttonFrame = self.comparativoButton.frame;
+//        buttonFrame.origin.y = frameHeight;
+//        self.comparativoButton.frame = buttonFrame;
+//        [self.comparativoButton setHidden:NO];
+//    }
 }
 
 - (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center {
@@ -105,7 +134,7 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
     return zoomRect;
 }
 
-- (void) flipViewAtual{
+- (IBAction)flipViewAtual:(id)sender{
     if (comparativo) {
         self.tblCompImageView.image = imgComparativo;
     }
