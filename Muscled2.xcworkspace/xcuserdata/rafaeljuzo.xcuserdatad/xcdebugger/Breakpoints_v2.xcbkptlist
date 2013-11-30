@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Muscled2/ProdutoDetalheViewController.m"
-            timestampString = "407209508.756353"
+            timestampString = "407432425.678844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "-configureView"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "-flipViewAtual"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

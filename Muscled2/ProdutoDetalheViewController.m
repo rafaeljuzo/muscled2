@@ -34,9 +34,19 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
 
 - (void)configureView{
     
+    
+    //Gesture Recognizers for the Product View
+    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
+    [doubleTap setNumberOfTapsRequired:2];
+    
+    //Controla qual é a View que está visível na hierarquia.
+    viewPricipalVisivel = YES;
+    
     NSString * imgName = [NSString stringWithFormat:@"%@.png", nomeDoProduto];
     UIImageView *productImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imgName]];
     [self.fotoTextoScrollView addSubview:productImage];
+    [self.fotoTextoScrollView addGestureRecognizer:doubleTap];
+    
     
     UITextView * txtView = [[UITextView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + productImage.frame.size.height, self.view.frame.size.width, 400.0f)];
     txtView.text = textoDaDescricao;
@@ -44,21 +54,32 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
     txtView.backgroundColor = [UIColor blackColor];
     [self.fotoTextoScrollView addSubview:txtView];
     txtView.editable = NO;
+    txtView.scrollEnabled = NO;
     
-    UIButton * compareBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, productImage.frame.size.height + txtView.frame.size.height, 300, 50)];
+
     
-    compareBtn.titleLabel.text = @"Compare";
-    imgComparativo = [UIImage imageNamed:[NSString stringWithFormat:@"cmp%@@2x.png", nomeDoProduto]];
-    compareBtn.backgroundColor = [UIColor whiteColor];
-    compareBtn.titleLabel.textColor = [UIColor blueColor];
-    [compareBtn addTarget:self action:@selector(flipViewAtual:) forControlEvents:(UIControlEventTouchDown)];
+        UIButton * compareBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, productImage.frame.size.height + txtView.frame.size.height, 140, 50)];
+        [compareBtn setTitle:@"Comparativo" forState:UIControlStateNormal];
     
-    if (self.imgComparativo) {
+        imgComparativo = [UIImage imageNamed:[NSString stringWithFormat:@"cmp%@@2x.png", nomeDoProduto]];
+        compareBtn.backgroundColor =[UIColor colorWithRed:100/255.0 green:150/255.0 blue:180/255.0 alpha:1];
+        compareBtn.titleLabel.textColor = [UIColor whiteColor];
+        compareBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+        [compareBtn addTarget:self action:@selector(flipComparativo:) forControlEvents:(UIControlEventTouchDown)];
+    
         [self.fotoTextoScrollView addSubview: compareBtn];
-    }
     
+        UIButton * tabelaNut = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.origin.x + 160, productImage.frame.size.height +txtView.frame.size.height, 140, 50)];
+        [tabelaNut setTitle:@"Tabela Nutricional" forState:UIControlStateNormal];
+         imgTabelaNutricional = [UIImage imageNamed:[NSString stringWithFormat:@"tbl%@@2x.png", nomeDoProduto]];
+        tabelaNut.backgroundColor =[UIColor colorWithRed:100/255.0 green:150/255.0 blue:180/255.0 alpha:1];
+        tabelaNut.titleLabel.textColor = [UIColor whiteColor];
+        tabelaNut.titleLabel.font = [UIFont systemFontOfSize:12];
+        [tabelaNut addTarget:self action:@selector(flipTabela:) forControlEvents:(UIControlEventTouchDown)];
+        
+        [self.fotoTextoScrollView addSubview: tabelaNut];
     
-    self.fotoTextoScrollView.contentSize = CGSizeMake(self.view.frame.size.width, productImage.frame.size.height + txtView.frame.size.height + compareBtn.frame.size.height);
+        self.fotoTextoScrollView.contentSize = CGSizeMake(self.view.frame.size.width, productImage.frame.size.height + txtView.frame.size.height + 50);
     
     
     
@@ -121,6 +142,7 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
 //    }
 }
 
+
 - (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center {
     
     CGRect zoomRect;
@@ -134,7 +156,21 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
     return zoomRect;
 }
 
-- (IBAction)flipViewAtual:(id)sender{
+-(IBAction)flipComparativo:(id)sender
+{
+    comparativo = YES;
+    [self flipViewAtual];
+
+}
+
+-(IBAction)flipTabela:(id)sender
+{
+    comparativo = NO;
+    [self flipViewAtual];
+}
+
+- (void)flipViewAtual{
+    
     if (comparativo) {
         self.tblCompImageView.image = imgComparativo;
     }
@@ -215,11 +251,9 @@ viewPrincipal = _viewPrincipal, textoDaDescricao, imgFotoDoProduto, flipIndicato
 #pragma mark - TapDetectingImageViewDelegate methods
 
 - (void)handleDoubleTap:(UIGestureRecognizer *)gestureRecognizer {
-    if (self.tblCompScrollView.zoomScale != ZOOM_STEP) {
-        float newScale = ZOOM_STEP;
-        CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[gestureRecognizer locationInView:gestureRecognizer.view]];
-        [self.tblCompScrollView zoomToRect:zoomRect animated:YES];
-    }
+    UIImageView * cmpImage = [[UIImageView alloc] initWithImage:self.imgComparativo];
+    [self.fotoTextoScrollView addSubview:cmpImage];
+    
 }
 
 - (void)handleTwoFingerTap:(UIGestureRecognizer *)gestureRecognizer {

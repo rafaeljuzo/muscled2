@@ -127,6 +127,7 @@
 		11DF2CA014A5422700BAC2BF /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF2C9E14A5422700BAC2BF /* VideosViewController.m */; };
 		11DF2CA114A5422700BAC2BF /* VideosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DF2C9F14A5422700BAC2BF /* VideosViewController.xib */; };
 		11E8F4EC14B51EE200E3C77C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E8F4EB14B51EE200E3C77C /* QuartzCore.framework */; };
+		69FB177618490D7600264823 /* imagemHome1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69FB177518490D7600264823 /* imagemHome1@2x.png */; };
 		A59D084215444883000FFCEE /* DietaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59D084015444883000FFCEE /* DietaViewController.m */; };
 		A59D084315444883000FFCEE /* DietaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59D084115444883000FFCEE /* DietaViewController.xib */; };
 		A59D0846154448B8000FFCEE /* CalculaDieta.m in Sources */ = {isa = PBXBuildFile; fileRef = A59D0845154448B8000FFCEE /* CalculaDieta.m */; };
@@ -289,6 +290,7 @@
 		11DF2C9E14A5422700BAC2BF /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosViewController.m; sourceTree = "<group>"; };
 		11DF2C9F14A5422700BAC2BF /* VideosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideosViewController.xib; sourceTree = "<group>"; };
 		11E8F4EB14B51EE200E3C77C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		69FB177518490D7600264823 /* imagemHome1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imagemHome1@2x.png"; sourceTree = "<group>"; };
 		793FE02B536547BF91A4A972 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A59D083F15444883000FFCEE /* DietaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietaViewController.h; sourceTree = "<group>"; };
 		A59D084015444883000FFCEE /* DietaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietaViewController.m; sourceTree = "<group>"; };
@@ -497,6 +499,7 @@
 			children = (
 				0EC9C6FD15472ED00092EA37 /* popOverImage.png */,
 				0E33A56A14C8698C003B0372 /* imagemHome1.png */,
+				69FB177518490D7600264823 /* imagemHome1@2x.png */,
 				0EA5977814C9A74F0008C37A /* imagemHome2.png */,
 				0E3358C5153604A0005BED2C /* imagemHome3.png */,
 				0E3358C6153604A0005BED2C /* imagemHome4.png */,
@@ -1087,6 +1090,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					11DF2C2914A53C9100BAC2BF = {
+						DevelopmentTeam = NGB2559J3L;
+					};
+				};
 			};
 			buildConfigurationList = 11DF2C2414A53C9100BAC2BF /* Build configuration list for PBXProject "Muscled2" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1120,6 +1128,7 @@
 				11BE317114A56BD800FB6E4E /* produtos.png in Resources */,
 				11BE317214A56BD800FB6E4E /* produtos@2x.png in Resources */,
 				11BE317A14A56D5600FB6E4E /* Default.png in Resources */,
+				69FB177618490D7600264823 /* imagemHome1@2x.png in Resources */,
 				11BE317B14A56D5600FB6E4E /* Default@2x.png in Resources */,
 				11647D1614A56EF300067E77 /* Icon@2x.png in Resources */,
 				11647D1714A56EF700067E77 /* Icon.png in Resources */,
@@ -1365,7 +1374,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Muscled2/Muscled2-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
